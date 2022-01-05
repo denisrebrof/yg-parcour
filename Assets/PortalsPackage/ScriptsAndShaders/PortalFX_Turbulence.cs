@@ -22,8 +22,8 @@ public class PortalFX_Turbulence : MonoBehaviour
     {
         particleSys = GetComponent<ParticleSystem>();
 
-        if (particleArray==null || particleArray.Length < particleSys.maxParticles) 
-            particleArray = new ParticleSystem.Particle[particleSys.maxParticles];
+        if (particleArray==null || particleArray.Length < particleSys.main.maxParticles) 
+            particleArray = new ParticleSystem.Particle[particleSys.main.maxParticles];
     }
 
 

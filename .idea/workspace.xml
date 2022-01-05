@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="22j9Jv55n51ptV3Fex7fZtuvTdD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="" />
+      <created>1640340061366</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640340061366</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2351" y="490" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641156697394">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2351" y="490" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1641156697394" />
+    <state x="2288" y="275" width="583" height="849" key="find.popup" timestamp="1641142087397">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2288" y="275" width="583" height="849" key="find.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1641142087397" />
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1641156685809">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1641156685809" />
+  </component>
+</project>

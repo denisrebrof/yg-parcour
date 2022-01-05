@@ -1,18 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
-public class SImpleSoundToggle : MonoBehaviour
+[RequireComponent(typeof(Toggle))]
+public class SimpleSoundToggle : MonoBehaviour
 {
+    [SerializeField] private AudioMixer mixer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent<Toggle>().onValueChanged.AddListener(UpdateAudio);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateAudio(bool state)
     {
-        
+        Debug.Log("UpdateAudio: " + state.ToString());
+        mixer.SetFloat("MasterVolume", state ? 0 : -80);
     }
 }
