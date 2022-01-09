@@ -19,14 +19,14 @@
 
         <!-- Обработка рекламы в нужное время -->
         <script>
-              function showFullscrenAd() {
+              function showFullscreenAd() {
                 sdk.adv.showFullscreenAdv({
                   callbacks: {
                     onClose: function (wasShown) {
                       window.unityInstance.SendMessage('YandexSDK', 'OnInterstitialShown');
                     },
                     onError: function (error) {
-                      window.unityInstance.SendMessage('YandexSDK', 'OnInterstitialFailed', error);
+                      window.unityInstance.SendMessage('YandexSDK', 'OnInterstitialFailed', JSON.stringify(error));
                     }
                   }
                 })

@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.1
+  bundleVersion: 1.0.3
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -626,7 +626,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Stadia: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Standalone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;VK_SDK
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;YANDEX_SDK
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     XboxOne: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     iPhone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER

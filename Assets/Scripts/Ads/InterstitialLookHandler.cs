@@ -15,8 +15,10 @@ public class InterstitialLookHandler : MonoBehaviour
 
     private void Start()
     {
+        #if VK_SDK
         eventProvider.SetInterstitialFailedAction(OnFailed);
         eventProvider.SetInterstitialShownAction(OnShown);
+        #endif
     }
 
     private void OnShown()
