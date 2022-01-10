@@ -8,10 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: LowPolyWaterMaterialDirect
-  m_Shader: {fileID: 4800000, guid: 16516895e8a79bf49a6562c3c3b84cbf, type: 3}
+  m_Shader: {fileID: 4800000, guid: f4af0b759c18e8e458ca82796e2a972f, type: 3}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -107,6 +107,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ThirdDisplacementHeightMap:
         m_Texture: {fileID: 2800000, guid: dc30b984e8e3c4cdfb38d5fceb411602, type: 2}
         m_Scale: {x: 1, y: 1}
@@ -116,6 +120,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _WavesTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -129,8 +137,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AO: 0.13
     - _Ambient: 1
     - _BumpScale: 1
+    - _ChromaticAberration: 0.1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DirectLight: 1
@@ -138,6 +148,7 @@ Material:
     - _DisplacementTiling: 18.586807
     - _DstBlend: 0
     - _FadeExp: 0.91503274
+    - _Float0: 0.39
     - _FoamWaveDependency: 0.10205479
     - _FresnelPower: 1.7931035
     - _FresnelScale: 2.06
@@ -149,7 +160,7 @@ Material:
     - _InvFade: 0.628783
     - _InvFadeDepthFade: 0.07197756
     - _InvFadeFoam: 0.1217
-    - _Metallic: 0
+    - _Metallic: 0.03
     - _Mode: 0
     - _NormalsDisplacement: 0
     - _OcclusionStrength: 1
@@ -161,19 +172,29 @@ Material:
     - _Shininess: 17.1
     - _ShoreTiling: 56.862743
     - _SkyBoxReflection: 0.426
+    - _Smoothness: 0.82
     - _SmoothnessTextureChannel: 0
+    - _Specular: 0
     - _SpecularHighlights: 1
     - _Speed: 0.4137931
     - _SrcBlend: 1
+    - _TransAmbient: 0.2
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.1
+    - _TransScattering: 2
+    - _TransShadow: 0.9
+    - _Translucency: 1
     - _UVSec: 0
     - _WaterDepth: 40.98077
     - _WaveCapsAmount: 0.18275861
+    - _WaveDisplacement: 0.1
     - _WaveFoamDistort: 0.27931035
     - _WaveHeight: 0.5
     - _WaveLength: 0.5
-    - _WaveScale: 0.046289656
-    - _WaveSpeed: 1
+    - _WaveScale: 3
+    - _WaveSpeed: 0.1
     - _ZWrite: 1
+    - __dirty: 0
     - _isInnerAlphaBlendOrColor: 0
     m_Colors:
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
@@ -183,7 +204,8 @@ Material:
     - _BumpDirection: {r: 30, g: 30, b: 30, a: -50}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.01, g: 0.01, b: 0.01, a: 0.01}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.4669811, g: 0.9281646, b: 1, a: 1}
+    - _Color0: {r: 1, g: 1, b: 1, a: 0}
     - _DepthColor: {r: 0.027511697, g: 0.14179105, b: 0.13226777, a: 0.4627451}
     - _DepthColorFade: {r: 0.8880597, g: 0.27834705, b: 0.44463244, a: 0.22352941}
     - _DirectLightRotation: {r: -10, g: 22.37, b: -10, a: 0}
@@ -215,8 +237,10 @@ Material:
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShorePerturbation: {r: 0, g: 0, b: 0, a: 0}
     - _ShoreTiling: {r: 1, g: 1, b: 0.1, a: 0.1}
-    - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Specular: {r: 0, g: 0, b: 0, a: 1}
     - _SpecularColor: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
+    - _Translusency: {r: 0, g: 0, b: 0, a: 0}
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
     - _WaveOffset: {r: -0, g: -0, b: -0, a: -0}
     - _WaveScale4: {r: 0, g: 0, b: 0, a: 0}
