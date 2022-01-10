@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 644712076}
-  m_IndirectSpecularColor: {r: 0.16049469, g: 0.8293301, b: 0.8713999, a: 1}
+  m_IndirectSpecularColor: {r: 0.42674366, g: 0.923168, b: 0.93996185, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1963,9 +1963,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: de153503f0efd47458b66c880c53b401,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e057a3985633e9d45a8d80da8545c402, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 59a9330bd3cc6b846b539f65cddb69df, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2325,11 +2325,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Water
-      objectReference: {fileID: 0}
-    - target: {fileID: 1454609203063839142, guid: fac072217846a514b9652f91c5598b19,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fac072217846a514b9652f91c5598b19, type: 3}
