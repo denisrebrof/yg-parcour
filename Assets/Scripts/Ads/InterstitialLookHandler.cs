@@ -15,7 +15,7 @@ public class InterstitialLookHandler : MonoBehaviour
 
     private void Start()
     {
-        #if VK_SDK
+        #if VK_SDK || POKI_SDK
         eventProvider.SetInterstitialFailedAction(OnFailed);
         eventProvider.SetInterstitialShownAction(OnShown);
         #endif

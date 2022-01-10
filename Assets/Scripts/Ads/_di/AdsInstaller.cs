@@ -11,16 +11,20 @@ namespace Ads._di
     {
         public override void InstallBindings()
         {
-            #if YANDEX_SDK
+#if YANDEX_SDK
             Container.Bind<IInterstitalAdNavigator>().To<YandexInterstitialAdNavigator>().AsSingle();
             Container.Bind<IInterstitialEventProvider>().To<YandexInterstitialEventProvider>().AsSingle();
-            #elif VK_SDK
+#elif VK_SDK
             Container.Bind<IInterstitalAdNavigator>().To<VKInterstitialAdNavigator>().AsSingle();
             Container.Bind<IInterstitialEventProvider>().To<VKInterstitialEventProvider>().AsSingle();
-            #else
+#elif POKI_SDK
+            var navigator = new PokiInterstitialAdNavigatorProvider();
+            Container.Bind<IInterstitalAdNavigator>().FromInstance(navigator).AsSingle();
+            Container.Bind<IInterstitialEventProvider>().FromInstance(navigator).AsSingle();
+#else
             Container.Bind<IInterstitalAdNavigator>().To<DebugLogInterstitialAdNavigator>().AsSingle();
             Container.Bind<IInterstitialEventProvider>().To<StubInterstitialEventProvider>().AsSingle();
-            #endif
+#endif
         }
     }
 }
