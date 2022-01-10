@@ -33,6 +33,16 @@ mergeInto(LibraryManager.library, {
       }
   },
 
+  ShowInviteBox: function () {
+    showInviteBox();
+  },
+
+  ShowWallPostBox: function(message, attachments) {
+    var m = UTF8ToString(message);
+    var a = UTF8ToString(attachments);
+    showWallPostBox(m, a);
+  },
+
   GetLang: function() {
     var returnStr = getLang();
     var bufferSize = lengthBytesUTF8(returnStr) + 1;

@@ -40,4 +40,26 @@
           })
       }
 
+      function showRewardedAd(){
+        vkBridge.send('VKWebAppShowNativeAds',{ad_format:"reward"}).then(data => {
+          console.log(data);
+<!--          window.unityInstance.SendMessage('VKSDK', 'RewardGetting',JSON.stringify(data.result));-->
+          })
+      }
+
+      function showInviteBox(){
+        vkBridge.send("VKWebAppShowInviteBox", {})
+        .then(data => console.log(data.success))
+        .catch(error => console.log(error));
+      }
+
+      function showWallPostBox(message, attachments){
+        vkBridge.send("VKWebAppShowWallPostBox", {
+            "message": message,
+            "attachments": attachments
+        })
+        .then(data => console.log(data.success))
+        .catch(error => console.log(error));
+      }
+
 </script>
