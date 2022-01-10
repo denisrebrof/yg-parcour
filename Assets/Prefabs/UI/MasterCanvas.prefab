@@ -2529,6 +2529,7 @@ GameObject:
   - component: {fileID: 9155864719473507715}
   - component: {fileID: 8406094993685206183}
   - component: {fileID: 33278639936998615}
+  - component: {fileID: 6939301335381719400}
   m_Layer: 5
   m_Name: View - ShareView
   m_TagString: Untagged
@@ -3291,6 +3292,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenName: Main Menu
+--- !u!114 &6939301335381719400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387881706953463906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173d5d0efe2fbf549bcb34537402c5f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397242949995038681
 GameObject:
   m_ObjectHideFlags: 0

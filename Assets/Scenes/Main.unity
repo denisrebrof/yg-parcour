@@ -1737,6 +1737,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297565524201896768, guid: 0b5633ffafe83d14c972b01f08e08286,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4528501758021531151, guid: 0b5633ffafe83d14c972b01f08e08286,
         type: 3}
       propertyPath: m_Enabled
@@ -2248,6 +2253,7 @@ GameObject:
   - component: {fileID: 1972184656}
   - component: {fileID: 1972184655}
   - component: {fileID: 1972184654}
+  - component: {fileID: 1972184658}
   m_Layer: 0
   m_Name: ShareRecordListener
   m_TagString: Untagged
@@ -2342,6 +2348,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1972184658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972184653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173d5d0efe2fbf549bcb34537402c5f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2015796322 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5978549586110143547, guid: f1935759df9af8e43ad56713544adc20,

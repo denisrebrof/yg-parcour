@@ -7,7 +7,7 @@ public class SocialBlock : MonoBehaviour
 #if VK_SDK
         return;
 #else
-            gameObject.SetActive(false);
+        DestroyImmediate(gameObject);
 #endif
     }
 }
