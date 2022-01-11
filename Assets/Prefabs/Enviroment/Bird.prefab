@@ -176,7 +176,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -52408815747596912, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
         type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -52408815747596912, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
+        type: 3}
       propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -52408815747596912, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -52408815747596912, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
+        type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -52408815747596912, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
+        type: 3}
+      propertyPath: m_SkinnedMotionVectors
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 581770392058916369, guid: 70123a3791cdc794ea2e3fe3a0d875f4,
