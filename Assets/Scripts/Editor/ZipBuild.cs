@@ -17,8 +17,13 @@ public class ZipBuild
 #if YANDEX_SDK || POKI_SDK
         var projectRootPath = Directory.GetParent(Application.dataPath)?.FullName;
         var script = Directory.GetFiles(projectRootPath).First(file => file.Contains("zip_build"));
-        var archiveName = pathToBuiltProject + "_zipped";
-        RunCmd("C:/Python27amd64/python.exe", $"{script} {pathToBuiltProject} {archiveName}");
+        var archiveName = pathToBuiltProject + "_zipped_" + DateTime.Now.ToFileTime();
+
+        var pythonpath = GetPythonPath();
+        if(pythonpath==null)
+            return;
+        
+        RunCmd(pythonpath + "python.exe", $"{script} {pathToBuiltProject} {archiveName}");
 #endif
     }
 
@@ -37,5 +42,31 @@ public class ZipBuild
                 Console.Write(result);
             }
         }
+    }
+
+    private static string GetPythonPath()
+    {
+        var entries = Environment.GetEnvironmentVariable("path").Split(';');
+        string python_location = null;
+
+        foreach (string entry in entries)
+        {
+            if (entry.ToLower().Contains("python"))
+            {
+                var breadcrumbs = entry.Split('\\');
+                foreach (string breadcrumb in breadcrumbs)
+                {
+                    if (breadcrumb.ToLower().Contains("python"))
+                    {
+                        python_location += breadcrumb + '\\';
+                        break;
+                    }
+                    python_location += breadcrumb + '\\';
+                }
+                break;
+            }
+        }
+
+        return python_location;
     }
 }

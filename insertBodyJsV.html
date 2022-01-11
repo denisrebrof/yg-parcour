@@ -40,13 +40,6 @@
           })
       }
 
-      function showRewardedAd(){
-        vkBridge.send('VKWebAppShowNativeAds',{ad_format:"reward"}).then(data => {
-          console.log(data);
-<!--          window.unityInstance.SendMessage('VKSDK', 'RewardGetting',JSON.stringify(data.result));-->
-          })
-      }
-
       function showInviteBox(){
         vkBridge.send("VKWebAppShowInviteBox", {})
         .then(data => console.log(data.success))

@@ -1,9 +1,6 @@
-using System;
-using System.Reflection;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
-using UnityEngine;
 
 public class SelectTemplate : IPreprocessBuildWithReport
 {
