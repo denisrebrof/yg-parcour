@@ -613,6 +613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: ad_die_inter
+  configKeyY: ad_die_i_y
+  configKeyV: ad_die_i_v
   placement: die
 --- !u!4 &579498440
 Transform:
@@ -1725,6 +1727,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: ad_lvl_inter
+  configKeyY: ad_lvl_i_y
+  configKeyV: ad_lvl_i_v
   placement: new_lvl
 --- !u!4 &1736482141
 Transform:

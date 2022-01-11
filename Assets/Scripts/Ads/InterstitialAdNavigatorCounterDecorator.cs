@@ -11,6 +11,8 @@ namespace Ads
     {
         [Inject] private IInterstitalAdNavigator adNavigator;
         [SerializeField] private string configKey;
+        [SerializeField] private string configKeyY;
+        [SerializeField] private string configKeyV;
         [SerializeField] private string placement;
         private int invokeTimes = 0;
         private int showInterval = 1;
@@ -31,7 +33,13 @@ namespace Ads
 
             try
             {
-                var configValue = GameAnalytics.GetRemoteConfigsValueAsString(configKey, showInterval.ToString());
+                string key = configKey;
+#if YANDEX_SDK
+                key = configKeyY;
+#elif VK_SDK
+                key = configKeyV;
+#endif
+                var configValue = GameAnalytics.GetRemoteConfigsValueAsString(key, showInterval.ToString());
                 var interval = int.Parse(configValue);
                 showInterval = interval;
             }
