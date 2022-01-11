@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/DebugLogInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/DebugLogInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigatorLockLookDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigatorLockLookDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertBodyJsV.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsV.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,17 +112,43 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonLook.cs</url>
-          <line>40</line>
-          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\ExternalAssets\Mini First Person Controller\Scripts\FirstPersonLook.cs" initialLine="40" containingFunctionPresentation="method 'Update'">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigatorLockLookDecorator.cs</url>
+          <line>21</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Ads\InterstitialAdNavigatorLockLookDecorator.cs" initialLine="21" containingFunctionPresentation="lambda expression inside method 'ShowAd'">
             <startOffsets>
-              <option value="1283" />
+              <option value="587" />
             </startOffsets>
             <endOffsets>
-              <option value="1354" />
+              <option value="608" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigatorLockLookDecorator.cs</url>
+          <line>22</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Ads\InterstitialAdNavigatorLockLookDecorator.cs" initialLine="22" containingFunctionPresentation="lambda expression inside method 'ShowAd'">
+            <startOffsets>
+              <option value="642" />
+            </startOffsets>
+            <endOffsets>
+              <option value="663" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/DebugLogInterstitialAdNavigator.cs</url>
+          <line>14</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Ads\InterstitialAdNavigator\DebugLogInterstitialAdNavigator.cs" initialLine="11" containingFunctionPresentation="lambda expression inside method 'ShowAd'">
+            <startOffsets>
+              <option value="432" />
+            </startOffsets>
+            <endOffsets>
+              <option value="462" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

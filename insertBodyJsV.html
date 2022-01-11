@@ -24,13 +24,19 @@
       }
 
       function showFullscreenAd(){
-        vkBridge.send('VKWebAppShowNativeAds',{ad_format:"interstitial"}).then(data => {
+        vkBridge
+        .send('VKWebAppShowNativeAds',{ad_format:"interstitial"})
+        .then(data => {
           if(data.result){
             window.unityInstance.SendMessage('VKSDK', 'OnInterstitialShown');
           }else{
             window.unityInstance.SendMessage('VKSDK', 'OnInterstitialError', JSON.stringify(data.result));
           }
-          console.log(data);});
+          console.log(data);
+          }
+        ).catch(e => {
+			window.unityInstance.SendMessage('VKSDK', 'OnInterstitialError', JSON.stringify(e));
+		});
       }
 
       function showRewardedAd(){

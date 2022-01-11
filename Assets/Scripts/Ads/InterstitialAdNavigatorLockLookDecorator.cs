@@ -14,10 +14,25 @@ namespace Ads
 
         public void SetUIShownState(bool shown) => uiShownState = shown;
 
-        public IObservable<ShowInterstitialResult> ShowAd() => Target.ShowAd().Do(_ =>
-            {
-                if (!uiShownState) look.SetEnabledState(true);
-            }
-        );
+        public IObservable<ShowInterstitialResult> ShowAd()
+        {
+            SetLockedState(true);
+            return Target
+                .ShowAd()
+                .Do(_ => SetLockedState(false))
+                .DoOnError(_ => SetLockedState(false));
+        }
+
+        private void SetLockedState(bool locked)
+        {
+            Debug.Log("SetLockedState: " + locked);
+            if (locked)
+                look.SetEnabledState(false);
+            
+            if (!locked && !uiShownState) 
+                look.SetEnabledState(true);
+
+            Time.timeScale = locked ? 0f : 1f;
+        }
     }
 }
