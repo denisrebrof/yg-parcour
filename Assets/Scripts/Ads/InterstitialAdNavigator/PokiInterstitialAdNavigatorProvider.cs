@@ -14,6 +14,7 @@ namespace Ads.InterstitialAdNavigator
 
         public void ShowAd()
         {
+#if POKI_SDK
             if (sdk.adsBlocked() || sdk.isShowingAd)
             {
                 interstitialFailedAction("adsBlocked");
@@ -28,6 +29,7 @@ namespace Ads.InterstitialAdNavigator
                 
             sdk.commercialBreakCallBack += onShown;
             sdk.commercialBreak();
+#endif
         }
 
         private void onShown()
