@@ -10,8 +10,6 @@ public class FirstPersonLook : MonoBehaviour
     Vector2 frameVelocity;
 
     [SerializeField] private bool enabledState = true;
-    [SerializeField] private Canvas ui;
-
 
     void Reset()
     {
@@ -52,5 +50,12 @@ public class FirstPersonLook : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.Confined;
         }
+    }
+
+    public void ResetLook()
+    {
+        velocity = Vector2.zero;
+        frameVelocity = Vector2.zero;
+        Input.ResetInputAxes();
     }
 }

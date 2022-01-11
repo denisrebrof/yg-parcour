@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.4
+  bundleVersion: 1.0.5
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -698,7 +698,7 @@ PlayerSettings:
   blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 256
-  webGLExceptionSupport: 2
+  webGLExceptionSupport: 0
   webGLNameFilesAsHashes: 0
   webGLDataCaching: 1
   webGLDebugSymbols: 0
@@ -725,7 +725,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Stadia: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Standalone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;YANDEX_SDK;AMPLIFY_SHADER_EDITOR
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;AMPLIFY_SHADER_EDITOR;YANDEX_SDK
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     XboxOne: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     iPhone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER

@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿using System;
+using UniRx;
+using UnityEngine;
 
-namespace Ads.AdNavigator
+namespace Ads.InterstitialAdNavigator
 {
     public class DebugLogInterstitialAdNavigator: IInterstitalAdNavigator
     {
-        public void ShowAd() => Debug.Log("Debug Show interstitial");
+        public IObservable<ShowInterstitialResult> ShowAd()
+        {
+            Debug.Log("Debug Show interstitial");
+            return Observable.Return(ShowInterstitialResult.Success);
+        }
     }
 }

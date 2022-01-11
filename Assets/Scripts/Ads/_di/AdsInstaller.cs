@@ -1,30 +1,53 @@
-using Ads.AdNavigator;
 using Ads.InterstitialAdNavigator;
-using Ads.InterstitialEventProvider;
+using Analytics;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Zenject;
 
 namespace Ads._di
 {
-    [CreateAssetMenu(fileName = "AdsInstaller", menuName = "Installers/AdsInstaller")]
-    public class AdsInstaller : ScriptableObjectInstaller<AdsInstaller>
+    public class AdsInstaller : MonoInstaller
     {
+        [SerializeField] private InterstitialAdNavigatorCounterDecorator dieCounterNavigator;
+        [SerializeField] private InterstitialAdNavigatorCounterDecorator levelLoadedCounterNavigator;
+        [FormerlySerializedAs("lockLookInterstitialAdNavigatorDecorator")] [SerializeField] private InterstitialAdNavigatorLockLookDecorator interstitialAdNavigatorLockLookDecorator;
+        [SerializeField] private InterstitialAdNavigatorMuteAudioDecorator muteAudioInterstitialAdNavigatorDecorator;
         public override void InstallBindings()
         {
+            Container
+                .Bind<IInterstitalAdNavigator>()
 #if YANDEX_SDK
-            Container.Bind<IInterstitalAdNavigator>().To<YandexInterstitialAdNavigator>().AsSingle();
-            Container.Bind<IInterstitialEventProvider>().To<YandexInterstitialEventProvider>().AsSingle();
+                .To<YandexInterstitialAdNavigator>()
 #elif VK_SDK
-            Container.Bind<IInterstitalAdNavigator>().To<VKInterstitialAdNavigator>().AsSingle();
-            Container.Bind<IInterstitialEventProvider>().To<VKInterstitialEventProvider>().AsSingle();
+                .To<VKInterstitialAdNavigator>()
 #elif POKI_SDK
-            var navigator = new PokiInterstitialAdNavigatorProvider();
-            Container.Bind<IInterstitalAdNavigator>().FromInstance(navigator).AsSingle();
-            Container.Bind<IInterstitialEventProvider>().FromInstance(navigator).AsSingle();
+                .To<PokiInterstitialAdNavigator>()
 #else
-            Container.Bind<IInterstitalAdNavigator>().To<DebugLogInterstitialAdNavigator>().AsSingle();
-            Container.Bind<IInterstitialEventProvider>().To<StubInterstitialEventProvider>().AsSingle();
+                .To<DebugLogInterstitialAdNavigator>()
 #endif
+                .AsSingle()
+                .WhenInjectedInto<InterstitialAdNavigatorAnalyticsDecorator>();
+            
+            Container
+                .Bind<IInterstitalAdNavigator>()
+                .To<InterstitialAdNavigatorAnalyticsDecorator>()
+                .FromNew()
+                .AsSingle()
+                .WhenInjectedInto<InterstitialAdNavigatorLockLookDecorator>();
+            
+            Container
+                .Bind<IInterstitalAdNavigator>()
+                .To<InterstitialAdNavigatorLockLookDecorator>()
+                .FromInstance(interstitialAdNavigatorLockLookDecorator)
+                .AsSingle()
+                .WhenInjectedInto<InterstitialAdNavigatorMuteAudioDecorator>();
+            
+            Container
+                .Bind<IInterstitalAdNavigator>()
+                .To<InterstitialAdNavigatorMuteAudioDecorator>()
+                .FromInstance(muteAudioInterstitialAdNavigatorDecorator)
+                .AsSingle()
+                .WhenInjectedInto<InterstitialAdNavigatorCounterDecorator>();
         }
     }
 }
