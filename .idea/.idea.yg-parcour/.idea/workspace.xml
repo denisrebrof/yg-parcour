@@ -2,65 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Block_2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Arch_0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Arch_0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Arch_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Arch_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Pillar_2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_10.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_10.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_11.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_11.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_3.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_3.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_4.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_4.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_5.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_5.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_6.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_6.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_7.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_7.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_8.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_8.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_9.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Destroy_Plate_9.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_2.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Grass_2.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Ground_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Ground_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Stone_0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Stone_0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Stone_1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Models/Stone_1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Big.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Big.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Big_Pressed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Big_Pressed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  parchment.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  parchment.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small Set.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small Set.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenBarriersParts/SingleWoodenPlank_13_v1.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyBarriersPackFree/BarriersAssets/Meshes/WoodenBarriers/WoodenBarriersParts/SingleWoodenPlank_13_v1.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-01.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-02.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-02.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-03.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-03.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-04.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-04.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-05.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/LowPolyFantasyClouds/Models/RG_Cloud-05.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Polygonal Particles/Assets/Meshes/Leaf.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Polygonal Particles/Assets/Meshes/Leaf.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Hand/c91a83ef237948fea3f49a9bfb12c2f0.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Hand/c91a83ef237948fea3f49a9bfb12c2f0.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/Seagull Ambience 1 - QuickSounds.com.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/Seagull Ambience 1 - QuickSounds.com.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Palettes/Texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Palettes/Texture.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PortalsPackage/MatAndText/Shared/Distortion2_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PortalsPackage/MatAndText/Shared/Distortion2_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/noisecreations_AMB-NCFREE02_EnglishCoast-Waves-DistantSeagulls.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/noisecreations_AMB-NCFREE02_EnglishCoast-Waves-DistantSeagulls.mp3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/smartsound_HUMAN_VOCAL_Female_03_Pain_01 (mp3cut.net).mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/smartsound_HUMAN_VOCAL_Female_03_Pain_01 (mp3cut.net).mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/zapsplat_multimedia_game_tone_short_positive_bonus_win_glide_synth_001_51329.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/zapsplat_multimedia_game_tone_short_positive_bonus_win_glide_synth_001_51329.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/zapsplat_nature_ocean_storm_high_winds_heavy_large_waves_hurricane_001_63300.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/zapsplat_nature_ocean_storm_high_winds_heavy_large_waves_hurricane_001_63300.mp3.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/34-347014_invite-friends-comments-invite-friends-icon-png.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/34-347014_invite-friends-comments-invite-friends-icon-png.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/34-347014_invite-friends-comments-invite-friends-icon-png.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/34-347014_invite-friends-comments-invite-friends-icon-png.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/complete-particles.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/complete-particles.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/complete-portal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/complete-portal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/share.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/share.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/star of dawn.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/star of dawn.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/wall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/wall.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +85,7 @@
       <workItem from="1641804259763" duration="11507000" />
       <workItem from="1641835604774" duration="5889000" />
       <workItem from="1641887219142" duration="618000" />
-      <workItem from="1642013238233" duration="1951000" />
+      <workItem from="1642013238233" duration="2549000" />
     </task>
     <servers />
   </component>

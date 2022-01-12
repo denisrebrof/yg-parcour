@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Palettes/Texture.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/B&amp;J Studio/Palettes/Texture.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PortalsPackage/MatAndText/Shared/Distortion2_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PortalsPackage/MatAndText/Shared/Distortion2_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

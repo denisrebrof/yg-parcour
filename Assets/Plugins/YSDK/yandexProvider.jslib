@@ -16,7 +16,7 @@ mergeInto(LibraryManager.library, {
   },
 
   ShowFullscreenAd: function () {
-    showFullscrenAd();
+    showFullscreenAd();
   },
 
   ShowRewardedAd: function(placement) {
