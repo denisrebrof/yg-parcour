@@ -109,16 +109,18 @@ public class YandexSDK : MonoBehaviour {
     /// <summary>
     /// Callback from index.html
     /// </summary>
-    public void OnInterstitialShown() {
-        onInterstitialShown();
+    public void OnInterstitialShown()
+    {
+        if (onInterstitialShown != null) onInterstitialShown.Invoke();
     }
 
     /// <summary>
     /// Callback from index.html
     /// </summary>
     /// <param name="error"></param>
-    public void OnInterstitialError(string error) {
-        onInterstitialFailed(error);
+    public void OnInterstitialFailed(string error)
+    {
+        if (onInterstitialFailed != null) onInterstitialFailed(error);
     }
 
     /// <summary>

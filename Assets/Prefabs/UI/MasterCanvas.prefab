@@ -3814,8 +3814,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 19.0527}
-  m_SizeDelta: {x: 350, y: 71.8945}
+  m_AnchoredPosition: {x: -0.0195, y: 25.8531}
+  m_SizeDelta: {x: 365.0329, y: 85.4953}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9020809387513651068
 CanvasRenderer:
@@ -3845,8 +3845,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8dd861a6e819de241bca68a36048a6bd, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 83a1645ddb3ee4d43971152eb5c09cd6, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3922,7 +3922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d1122b06e5be594f9f35e484a3e0fb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83a1645ddb3ee4d43971152eb5c09cd6, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4089,7 +4089,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d1122b06e5be594f9f35e484a3e0fb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 83a1645ddb3ee4d43971152eb5c09cd6, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12843,7 +12843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cf1462bc694c3c249831ad8ac5293aa2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a454050719005b444b59a84eaafba779, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12934,8 +12934,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9a6560e5bacb40847bb1b879ede354fb, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 83a1645ddb3ee4d43971152eb5c09cd6, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
