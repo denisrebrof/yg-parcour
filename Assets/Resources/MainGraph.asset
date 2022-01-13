@@ -311,10 +311,16 @@ MonoBehaviour:
   m_id: 0218619a-ae0b-48c2-ba07-5875e26ec0ba
   m_name: Game
   m_notes: 
-  m_onEnterShowViews: []
+  m_onEnterShowViews:
+  - Category: General
+    InstantAction: 0
+    Name: HUD
   m_onEnterHideViews: []
   m_onExitShowViews: []
-  m_onExitHideViews: []
+  m_onExitHideViews:
+  - Category: General
+    InstantAction: 0
+    Name: HUD
 --- !u!114 &-4968612650333640357
 MonoBehaviour:
   m_ObjectHideFlags: 1
