@@ -15,7 +15,7 @@ namespace Gameplay
 
         public void SetScale(float scale)
         {
-            target.localScale = Vector3.one*Math.Min(0f,scale);
+            target.localScale = Vector3.one*Math.Max(0f,scale);
         }
     }
 }

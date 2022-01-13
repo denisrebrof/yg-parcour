@@ -21,7 +21,7 @@ namespace Gameplay
             if (target == null)
                 return;
 
-            impact.Value = Mathf.Clamp(idleValue + target.velocity.magnitude * speedFactor, 0f, maxValue);
+            impact.Value = Mathf.Clamp(idleValue + target.velocity.magnitude * speedFactor, idleValue, maxValue);
         }
     }
 }
