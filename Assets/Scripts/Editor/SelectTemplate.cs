@@ -15,6 +15,8 @@ public class SelectTemplate : IPreprocessBuildWithReport
         var templateValue = "Universal2020";
 #if POKI_SDK
         templateValue = "poki-template";
+#elif CRAZY_SDK
+        templateValue = "Crazy_2020";
 #endif
         PlayerSettings.SetPropertyString("template", "PROJECT:" + templateValue, BuildTargetGroup.WebGL);
     }

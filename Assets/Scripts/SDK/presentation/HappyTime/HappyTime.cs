@@ -1,32 +1,30 @@
 using System.Collections;
+using SDK.presentation;
+using SDK.presentation.HappyTime;
 using UnityEngine;
 using Zenject;
 
-public class PokiHappyTime : MonoBehaviour
+public class HappyTime : MonoBehaviour
 {
     [SerializeField, Range(0f, 1f)] private float intensity = 0.5f;
     [SerializeField] private float cooldown = 0.5f;
 
-    private bool oncooldown = false;
+    private bool onCooldown = false;
     
-#if POKI_SDK
-    [Inject] private PokiUnitySDK sdk;
-#endif
+    [Inject] private IHappyTimeController controller;
 
-    public void HappyTime()
+    public void SetHappyTime()
     {
-#if POKI_SDK
-        if(oncooldown)
+        if(onCooldown)
             return;
-        sdk.happyTime(intensity);
+        controller.SetHappyTime(intensity);
         StartCoroutine(Cooldown());
-#endif
     }
 
     private IEnumerator Cooldown()
     {
-        oncooldown = true;
+        onCooldown = true;
         yield return new WaitForSeconds(cooldown);
-        oncooldown = false;
+        onCooldown = false;
     }
 }
