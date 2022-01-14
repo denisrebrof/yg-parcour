@@ -898,7 +898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: asafsfasfasf
+  m_Text: fffff
 --- !u!222 &753681141
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -920,7 +920,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 753681140}
-  sdk: {fileID: 0}
 --- !u!4 &764967826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5006041144151971659, guid: 0b5633ffafe83d14c972b01f08e08286,
@@ -1884,6 +1883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738990249}
   - component: {fileID: 1738990248}
+  - component: {fileID: 1738990250}
   m_Layer: 0
   m_Name: Ambience
   m_TagString: Untagged
@@ -1902,8 +1902,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: de153503f0efd47458b66c880c53b401,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 59a9330bd3cc6b846b539f65cddb69df, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
@@ -2003,6 +2003,20 @@ Transform:
   m_Father: {fileID: 831383502}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738990250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738990247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edb6e7e1a264d599ccdf6e82e69a705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://dl.dropboxusercontent.com/s/5fxk8zvjefmlpmx/music_dave_miles_shades_of_orange.mp3?dl=0
+  source: {fileID: 1738990248}
 --- !u!1001 &1842593094
 PrefabInstance:
   m_ObjectHideFlags: 0
