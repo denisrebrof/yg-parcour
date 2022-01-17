@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
@@ -13,7 +14,13 @@ public class MobileInputDebug : MonoBehaviour
 
     private void Start()
     {
-        isOnDesktop = sdk.GetIsOnDesktop();
+        try
+        {
+            isOnDesktop = sdk.GetIsOnDesktop();
+        }
+        catch (Exception e)
+        {
+        }
         if (isOnDesktop) target.gameObject.SetActive(false);
     }
 

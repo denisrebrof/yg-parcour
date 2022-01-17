@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInput.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookDeltaProviderRouter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookDeltaProviderRouter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookDesktopDeltaProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookDesktopDeltaProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookMobileDeltaProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/FirstPersonLookMobileDeltaProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonLook.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +34,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/PokiInterstitialAdNavigator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23QLc2h0yDW4r1yqumiPqo84R54" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,10 +68,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21012">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21012" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -86,6 +94,7 @@
       <workItem from="1641887219142" duration="618000" />
       <workItem from="1642013238233" duration="2549000" />
       <workItem from="1642090692803" duration="489000" />
+      <workItem from="1642447709130" duration="1595000" />
     </task>
     <servers />
   </component>
@@ -128,40 +137,19 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs</url>
           <line>24</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="23" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="604" />
-            </startOffsets>
-            <endOffsets>
-              <option value="622" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="23" containingFunctionPresentation="method 'Start'" />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs</url>
           <line>20</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="20" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="513" />
-            </startOffsets>
-            <endOffsets>
-              <option value="527" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="20" containingFunctionPresentation="method 'Start'" />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs</url>
           <line>19</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="19" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="463" />
-            </startOffsets>
-            <endOffsets>
-              <option value="496" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="19" containingFunctionPresentation="method 'Start'" />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

@@ -1,3 +1,4 @@
+using Gameplay;
 using UnityEngine;
 using Zenject;
 
@@ -7,5 +8,6 @@ public class ProjectInstaller : MonoInstaller
     public override void InstallBindings()
     {
         Container.BindInstance(look).AsSingle();
+        Container.Bind<FirstPersonLook.ILookDeltaProvider>().To<FirstPersonLookDeltaProviderRouter>().AsSingle();
     }
 }

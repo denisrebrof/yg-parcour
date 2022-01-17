@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using Zenject;
 
 public class FirstPersonLook : MonoBehaviour
 {
+    [Inject] private ILookDeltaProvider deltaProvider;
     [SerializeField] Transform character;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
@@ -11,26 +13,14 @@ public class FirstPersonLook : MonoBehaviour
 
     [SerializeField] private bool enabledState = true;
 
-    void Reset()
-    {
-        // Get the character from the FirstPersonMovement in parents.
-        character = GetComponentInParent<FirstPersonMovement>().transform;
-    }
+    void Reset() => character = GetComponentInParent<FirstPersonMovement>().transform;
 
-    void Start()
-    {
-        // Lock the mouse cursor to the game screen.
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    void Start() => Cursor.lockState = CursorLockMode.Locked;
 
     void Update()
     {
         // Get smooth velocity.
-        Vector2 mouseDelta;
-        if (enabledState)
-            mouseDelta = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        else
-            mouseDelta = Vector2.zero;
+        var mouseDelta = enabledState ? deltaProvider.GetDelta() : Vector2.zero;
         Vector2 rawFrameVelocity = Vector2.Scale(mouseDelta, Vector2.one * sensitivity);
         frameVelocity = Vector2.Lerp(frameVelocity, rawFrameVelocity, 1 / smoothing);
         velocity += frameVelocity;
@@ -44,12 +34,7 @@ public class FirstPersonLook : MonoBehaviour
     public void SetEnabledState(bool enabled)
     {
         enabledState = enabled;
-        if (enabledState)
-            Cursor.lockState = CursorLockMode.Locked;
-        else
-        {
-            Cursor.lockState = CursorLockMode.Confined;
-        }
+        Cursor.lockState = enabledState ? CursorLockMode.Locked : CursorLockMode.Confined;
     }
 
     public void ResetLook()
@@ -57,5 +42,10 @@ public class FirstPersonLook : MonoBehaviour
         velocity = Vector2.zero;
         frameVelocity = Vector2.zero;
         Input.ResetInputAxes();
+    }
+    
+    public interface ILookDeltaProvider
+    {
+        public Vector2 GetDelta();
     }
 }

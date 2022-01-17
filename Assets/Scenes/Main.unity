@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 644712076}
-  m_IndirectSpecularColor: {r: 0.5685536, g: 0.82241523, b: 0.8503299, a: 1}
+  m_IndirectSpecularColor: {r: 0.5685536, g: 0.82241535, b: 0.85033023, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2015,7 +2015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5edb6e7e1a264d599ccdf6e82e69a705, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: https://dl.dropboxusercontent.com/s/5fxk8zvjefmlpmx/music_dave_miles_shades_of_orange.mp3?dl=0
+  url: http://upreality.xyz/music_dave_miles_shades_of_orange(1).mp3
   source: {fileID: 1738990248}
 --- !u!1001 &1842593094
 PrefabInstance:
