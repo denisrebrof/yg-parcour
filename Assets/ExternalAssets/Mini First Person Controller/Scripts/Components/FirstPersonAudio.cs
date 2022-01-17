@@ -126,7 +126,7 @@ public class FirstPersonAudio : MonoBehaviour
         // PlayJumpAudio when Jumped.
         if (jump)
         {
-            jump.Jumped += PlayJumpAudio;
+            jump.Jumped.AddListener(PlayJumpAudio);
         }
 
         // Play crouch audio on crouch start/end.
@@ -145,7 +145,7 @@ public class FirstPersonAudio : MonoBehaviour
         // Undo PlayJumpAudio when Jumped.
         if (jump)
         {
-            jump.Jumped -= PlayJumpAudio;
+            jump.Jumped.RemoveListener(PlayJumpAudio);
         }
 
         // Undo play crouch audio on crouch start/end.

@@ -13,7 +13,7 @@ namespace Ads.InterstitialAdNavigator
             var interstitialShownObservable = Observable.FromEvent(
                 handler => instance.onInterstitialShown += handler,
                 handler => instance.onInterstitialShown -= handler
-            ).Select((_) => ShowInterstitialResult.Success);
+            ).Select(_ => ShowInterstitialResult.Success);
 
             var interstitialFailedObservable = Observable.FromEvent<string>(
                 handler => instance.onInterstitialFailed += handler,

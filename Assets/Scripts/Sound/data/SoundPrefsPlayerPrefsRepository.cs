@@ -7,10 +7,7 @@ namespace Sound.data
     {
         private string prefsKey = "soundEnabledState";
         
-        public void SetSoundEnabledState(bool enabled)
-        {
-            PlayerPrefs.SetInt(prefsKey, enabled ? 1 : 0);
-        }
+        public void SetSoundEnabledState(bool enabled) => PlayerPrefs.SetInt(prefsKey, enabled ? 1 : 0);
 
         public bool GetSoundEnabledState()
         {

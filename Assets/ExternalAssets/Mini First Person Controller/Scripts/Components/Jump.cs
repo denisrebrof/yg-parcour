@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Jump : MonoBehaviour
 {
     Rigidbody myRigidbody;
     public float jumpStrength = 2;
-    public event System.Action Jumped;
+    public UnityEvent Jumped;
 
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;

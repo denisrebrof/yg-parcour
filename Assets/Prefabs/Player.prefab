@@ -1066,6 +1066,46 @@ PrefabInstance:
       propertyPath: jumpStrength
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7951844672029784901}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Emit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameEventMessageEmitter, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Jump
+      objectReference: {fileID: 0}
+    - target: {fileID: 114497868231759342, guid: 11aaea5348574644a9eb4f4504fcce3f,
+        type: 3}
+      propertyPath: Jumped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 114503055206606986, guid: 11aaea5348574644a9eb4f4504fcce3f,
         type: 3}
       propertyPath: isGrounded
@@ -1148,6 +1188,19 @@ MonoBehaviour:
   fallHeight: -10
   target: {fileID: 5006041144151971659}
   startFallGameEvent: Fall
+--- !u!114 &7951844672029784901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003983515686702307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c3dda64f3c6734e8250bc13a68bfb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  message: Jump
 --- !u!4 &5005758384254398635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4490257326247362, guid: 11aaea5348574644a9eb4f4504fcce3f,

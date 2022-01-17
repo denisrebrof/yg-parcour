@@ -16,9 +16,9 @@ namespace Levels._di
         public override void InstallBindings()
         {
             //Daos
-            Container.Bind<ILevelCompletedStateDao>().To<PlayerPrefsLevelCompletedStateDao>().AsSingle();
+            Container.Bind<ILevelCompletedStateDao>().To<PlayerPrefsWrapperLevelCompletedStateDao>().AsSingle();
             Container.Bind<LevelsRepository.ILevelsDao>().FromInstance(levelsDao).AsSingle();
-            Container.Bind<CurrentLevelRepository.ICurrentLevelIdDao>().To<PlayerPrefsCurrentLevelIdDao>().AsSingle();
+            Container.Bind<CurrentLevelRepository.ICurrentLevelIdDao>().To<PlayerPrefsWrapperCurrentLevelIdDao>().AsSingle();
             Container.Bind<CurrentLevelRepository.IDefaultLevelIdDao>().To<HardcodedDefaultLevelIdDao>().AsSingle();
             //Repositories
             Container.Bind<ILevelsRepository>().To<LevelsRepository>().AsCached();

@@ -18,6 +18,12 @@ namespace Ads._di
                 .Bind<IInterstitalAdNavigator>()
 #if YANDEX_SDK
                 .To<YandexInterstitialAdNavigator>()
+                .AsSingle()
+                .WhenInjectedInto<YandexInterstitialNavigatorHitsDecorator>();
+                
+            Container
+                .Bind<IInterstitalAdNavigator>()
+                .To<YandexInterstitialNavigatorHitsDecorator>()
 #elif VK_SDK
                 .To<VKInterstitialAdNavigator>()
 #elif POKI_SDK

@@ -32,6 +32,8 @@ public class YandexSDK : MonoBehaviour {
     private static extern void InitPurchases();
     [DllImport("__Internal")]
     private static extern void Purchase(string id);
+    [DllImport("__Internal")]
+    private static extern void Hit(string id);
     
 	[DllImport("__Internal")]
     private static extern string GetDeviceType();
@@ -99,6 +101,10 @@ public class YandexSDK : MonoBehaviour {
     public void ShowRewarded(string placement) {
         rewardedAdPlacementsAsInt.Enqueue(ShowRewardedAd(placement));
         rewardedAdsPlacements.Enqueue(placement);
+    }
+    
+    public void AddHit(string eventName) {
+        Hit(eventName);
     }
     
     /// <summary>

@@ -24,6 +24,10 @@ mergeInto(LibraryManager.library, {
     return placement;
   },
 
+  Hit: function(ename) {
+      addHit(ename);
+  },
+
   OpenWindow: function(link){
     var url = UTF8ToString(link);
       document.onmouseup = function()
