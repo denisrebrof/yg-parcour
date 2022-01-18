@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using SDK.presentation.Platform;
+using UnityEngine;
 using Zenject;
 
 public class FirstPersonLook : MonoBehaviour
 {
     [Inject] private ILookDeltaProvider deltaProvider;
+    [Inject] private IPlatformProvider platformProvider;
     [SerializeField] Transform character;
     public float sensitivity = 2;
     public float smoothing = 1.5f;
@@ -15,7 +17,12 @@ public class FirstPersonLook : MonoBehaviour
 
     void Reset() => character = GetComponentInParent<FirstPersonMovement>().transform;
 
-    void Start() => Cursor.lockState = CursorLockMode.Locked;
+    void Start()
+    {
+        if (platformProvider.GetCurrentPlatform() == Platform.Mobile)
+            return;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     void Update()
     {
@@ -34,6 +41,8 @@ public class FirstPersonLook : MonoBehaviour
     public void SetEnabledState(bool enabled)
     {
         enabledState = enabled;
+        if (platformProvider.GetCurrentPlatform() == Platform.Mobile)
+            return;
         Cursor.lockState = enabledState ? CursorLockMode.Locked : CursorLockMode.Confined;
     }
 
@@ -43,7 +52,7 @@ public class FirstPersonLook : MonoBehaviour
         frameVelocity = Vector2.zero;
         Input.ResetInputAxes();
     }
-    
+
     public interface ILookDeltaProvider
     {
         public Vector2 GetDelta();

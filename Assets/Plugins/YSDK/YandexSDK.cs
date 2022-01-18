@@ -84,13 +84,7 @@ public class YandexSDK : MonoBehaviour {
         return GetLang();
     }
 	
-	public bool GetIsOnDesktop()
-    {
-        var val = !GetDeviceType().ToLower().Contains("mobile");
-        Debug.Log("GetIsDesktop");
-        Debug.Log(GetDeviceType());
-        return val;
-    }
+	public bool GetIsOnDesktop() => !GetDeviceType().ToLower().Contains("mobile");
 
     /// <summary>
     /// Call this to show rewarded ad

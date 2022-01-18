@@ -1,26 +1,24 @@
-﻿using UnityEngine;
+﻿using Gameplay.Input;
+using SDK.presentation.Platform;
+using UnityEngine;
 using Zenject;
 
-namespace Gameplay
+namespace Gameplay.Inputs
 {
     public class FirstPersonLookDeltaProviderRouter: FirstPersonLook.ILookDeltaProvider
     {
         private FirstPersonLook.ILookDeltaProvider desktopProvider = new FirstPersonLookDesktopDeltaProvider(); 
         private FirstPersonLook.ILookDeltaProvider mobileProvider = new FirstPersonLookMobileDeltaProvider(); 
-#if YANDEX_SDK
-        [Inject] private YandexSDK sdk;
-#endif
+        [Inject] private IPlatformProvider platformProvider;
 
         private bool initialized = false;
-        private bool isOnDesktop = false;
+        private bool isOnDesktop = true;
         
         public Vector2 GetDelta()
         {
             if (!initialized)
             {
-#if YANDEX_SDK
-                isOnDesktop = sdk.GetIsOnDesktop();
-#endif
+                isOnDesktop = platformProvider.GetCurrentPlatform() == Platform.Desktop;
                 initialized = true;
             }
             return isOnDesktop? desktopProvider.GetDelta() : mobileProvider.GetDelta();

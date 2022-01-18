@@ -1,6 +1,7 @@
 using CrazyGames;
 using SDK.presentation.HappyTime;
 using SDK.presentation.HappyTime.controller;
+using SDK.presentation.Platform;
 using UnityEngine;
 using Zenject;
 
@@ -17,6 +18,7 @@ public class SDKInstaller : ScriptableObjectInstaller
     {
         InstallSDK();
         InstallHappyTime();
+        InstallPlatformProvider();
     }
 
     private void InstallHappyTime()
@@ -51,6 +53,16 @@ public class SDKInstaller : ScriptableObjectInstaller
         var instance = Instantiate(crazySDK);
         instance.gameObject.name = "CRAZY_SDK";
         Container.Bind<CrazySDK>().FromInstance(instance).AsSingle();
+#endif
+    }
+
+    private void InstallPlatformProvider()
+    {
+#if YANDEX_SDK
+        Container.Bind<IPlatformProvider>().To<YandexPlatformProvider>().AsSingle();
+        // Container.Bind<IPlatformProvider>().To<MobilePlatformProvider>().AsSingle();
+#else
+        Container.Bind<IPlatformProvider>().To<DesktopPlatformProvider>().AsSingle();
 #endif
     }
 }

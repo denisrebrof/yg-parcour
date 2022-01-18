@@ -1,7 +1,8 @@
 ﻿using System.Linq;
 using UnityEngine;
+using static UnityEngine.Input;
 
-namespace Gameplay
+namespace Gameplay.Inputs
 {
     public class FirstPersonLookMobileDeltaProvider : FirstPersonLook.ILookDeltaProvider
     {
@@ -9,9 +10,9 @@ namespace Gameplay
 
         public Vector2 GetDelta()
         {
-            if (!Input.touches.Any(TouchInLookControlArea))
+            if (!touches.Any(TouchInLookControlArea))
                 return Vector2.zero;
-            return Input.touches.First(TouchInLookControlArea).deltaPosition;
+            return touches.First(TouchInLookControlArea).deltaPosition;
         }
 
         private bool TouchInLookControlArea(Touch touch) => touch.position.x > minX;
