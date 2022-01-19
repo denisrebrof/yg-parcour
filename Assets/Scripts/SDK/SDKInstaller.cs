@@ -59,8 +59,8 @@ public class SDKInstaller : ScriptableObjectInstaller
     private void InstallPlatformProvider()
     {
 #if YANDEX_SDK
-        Container.Bind<IPlatformProvider>().To<YandexPlatformProvider>().AsSingle();
-        // Container.Bind<IPlatformProvider>().To<MobilePlatformProvider>().AsSingle();
+        // Container.Bind<IPlatformProvider>().To<YandexPlatformProvider>().AsSingle();
+        Container.Bind<IPlatformProvider>().To<MobilePlatformProvider>().AsSingle();
 #else
         Container.Bind<IPlatformProvider>().To<DesktopPlatformProvider>().AsSingle();
 #endif

@@ -7,8 +7,8 @@ namespace Gameplay.Inputs
 {
     public class JumpInputProviderRouter: global::Jump.IJumpInputProvider
     {
-        private global::Jump.IJumpInputProvider desktopProvider = new JumpInputDesktopProvider(); 
-        private global::Jump.IJumpInputProvider mobileProvider = new JumpInputMobileProvider(); 
+        [Inject(Id = "DesktopJumpInputProvider")] private global::Jump.IJumpInputProvider desktopProvider;
+        [Inject(Id = "MobileJumpInputProvider")] private global::Jump.IJumpInputProvider mobileProvider; 
         [Inject] private IPlatformProvider platformProvider;
 
         private bool initialized = false;

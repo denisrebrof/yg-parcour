@@ -7,8 +7,8 @@ namespace Gameplay.Inputs
 {
     public class FirstPersonLookDeltaProviderRouter: FirstPersonLook.ILookDeltaProvider
     {
-        private FirstPersonLook.ILookDeltaProvider desktopProvider = new FirstPersonLookDesktopDeltaProvider(); 
-        private FirstPersonLook.ILookDeltaProvider mobileProvider = new FirstPersonLookMobileDeltaProvider(); 
+        [Inject(Id = "DesktopLookDeltaProvider")] private FirstPersonLook.ILookDeltaProvider desktopProvider;
+        [Inject(Id = "MobileLookDeltaProvider")] private FirstPersonLook.ILookDeltaProvider mobileProvider; 
         [Inject] private IPlatformProvider platformProvider;
 
         private bool initialized = false;

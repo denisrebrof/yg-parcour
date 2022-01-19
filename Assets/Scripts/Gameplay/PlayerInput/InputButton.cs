@@ -20,14 +20,13 @@ namespace Gameplay.Inputs
                 StartCoroutine(FireInput());
                 return;
             }
-
             handler.SetInput(posVal, axisName);
         }
 
         private IEnumerator FireInput()
         {
             handler.SetInput(posVal, axisName);
-            yield return null;
+            yield return new WaitForSeconds(0.2f);
             handler.SetInput(emptyVal, axisName);
         }
 

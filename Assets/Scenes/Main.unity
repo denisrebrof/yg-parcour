@@ -3821,7 +3821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   axisName: Jump
-  posVal: -1
+  posVal: 1
   emptyVal: 0
   fireOnce: 1
 --- !u!114 &867943951
