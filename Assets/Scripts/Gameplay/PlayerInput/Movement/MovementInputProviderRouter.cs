@@ -7,7 +7,7 @@ namespace Gameplay.Inputs
     public class MovementInputProviderRouter : FirstPersonMovement.IMovementInputProvider
     {
         private FirstPersonMovement.IMovementInputProvider desktopProvider = new MovementDesktopInputProvider();
-        [Inject] private FirstPersonMovement.IMovementInputProvider mobileProvider;
+        private FirstPersonMovement.IMovementInputProvider mobileProvider  = new MovementMobileInputProvider();
         [Inject] private IPlatformProvider platformProvider;
 
         private bool initialized = false;

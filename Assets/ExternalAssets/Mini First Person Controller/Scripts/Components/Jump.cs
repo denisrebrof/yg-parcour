@@ -1,10 +1,13 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Zenject;
 
 public class Jump : MonoBehaviour
 {
+    [Inject] private IJumpInputProvider jumpInputProvider;
     Rigidbody myRigidbody;
     public float jumpStrength = 2;
-    public event System.Action Jumped;
+    public event Action Jumped;
 
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
@@ -24,11 +27,13 @@ public class Jump : MonoBehaviour
 
     void LateUpdate()
     {
-        // Jump when the Jump button is pressed and we are on the ground.
-        if (Input.GetButtonDown("Jump") && (!groundCheck || groundCheck.isGrounded))
-        {
-            myRigidbody.AddForce(Vector3.up * 100 * jumpStrength);
-            Jumped?.Invoke();
-        }
+        if (!jumpInputProvider.GetHasJumpInput() || !groundCheck || groundCheck.isGrounded) return;
+        myRigidbody.AddForce(Vector3.up * 100 * jumpStrength);
+        Jumped?.Invoke();
+    }
+
+    public interface IJumpInputProvider
+    {
+        public bool GetHasJumpInput();
     }
 }

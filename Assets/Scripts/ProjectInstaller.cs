@@ -9,10 +9,9 @@ public class ProjectInstaller : MonoInstaller
     public override void InstallBindings()
     {
         Container.BindInstance(look).AsSingle();
+        Container.BindInterfacesAndSelfTo<InputHandler>().FromNew().AsSingle();
         Container.Bind<FirstPersonLook.ILookDeltaProvider>().To<FirstPersonLookDeltaProviderRouter>().AsSingle();
-        var mobileInput = new MovementMobileInputProvider();
-        Container.Bind<FirstPersonMovement.IMovementInputProvider>().FromInstance(mobileInput).AsSingle().WhenInjectedInto<MovementInputProviderRouter>();
-        Container.Bind<IMovementInputHandler>().FromInstance(mobileInput).AsSingle();
         Container.Bind<FirstPersonMovement.IMovementInputProvider>().To<MovementInputProviderRouter>().AsSingle();
+        Container.Bind<Jump.IJumpInputProvider>().To<JumpInputProviderRouter>().AsSingle();
     }
 }
