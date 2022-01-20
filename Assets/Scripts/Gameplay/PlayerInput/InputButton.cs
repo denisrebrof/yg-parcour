@@ -26,7 +26,7 @@ namespace Gameplay.Inputs
         private IEnumerator FireInput()
         {
             handler.SetInput(posVal, axisName);
-            yield return new WaitForSeconds(0.2f);
+            yield return null;
             handler.SetInput(emptyVal, axisName);
         }
 
