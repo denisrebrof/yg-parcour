@@ -12,7 +12,6 @@ public class FirstPersonMovement : MonoBehaviour
     [Header("Running")] public bool canRun = true;
     public bool IsRunning { get; private set; }
     public float runSpeed = 9;
-    public KeyCode runningKey = KeyCode.LeftShift;
 
     Rigidbody m_rigidbody;
 
@@ -28,7 +27,7 @@ public class FirstPersonMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Update IsRunning from input.
-        IsRunning = canRun && Input.GetKey(runningKey);
+        IsRunning = canRun && inputProvider.GetRunningInput();
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
@@ -50,5 +49,6 @@ public class FirstPersonMovement : MonoBehaviour
     public interface IMovementInputProvider
     {
         public Vector2 GetInput();
+        public bool GetRunningInput();
     }
 }

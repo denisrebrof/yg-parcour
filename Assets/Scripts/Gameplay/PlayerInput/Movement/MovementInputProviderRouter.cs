@@ -11,16 +11,23 @@ namespace Gameplay.Inputs
         [Inject] private IPlatformProvider platformProvider;
 
         private bool initialized = false;
+        
         private bool isOnDesktop = true;
 
-        public Vector2 GetInput()
+        public Vector2 GetInput() => GetCurrentProvider().GetInput();
+        public bool GetRunningInput() => GetCurrentProvider().GetRunningInput();
+
+        private void CheckInit()
         {
-            if (!initialized)
-            {
-                isOnDesktop = platformProvider.GetCurrentPlatform() == Platform.Desktop;
-                initialized = true;
-            }
-            return isOnDesktop ? desktopProvider.GetInput() : mobileProvider.GetInput();
+            if (initialized) return;
+            isOnDesktop = platformProvider.GetCurrentPlatform() == Platform.Desktop;
+            initialized = true;
+        }
+
+        private FirstPersonMovement.IMovementInputProvider GetCurrentProvider()
+        {
+            CheckInit();
+            return isOnDesktop ? desktopProvider : mobileProvider;
         }
     }
 }

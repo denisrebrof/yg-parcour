@@ -15,5 +15,13 @@ namespace Gameplay.Inputs
         {
             inputHandler[axis] = input;
         }
+
+        public void Reset()
+        {
+            foreach (var key in inputHandler.Keys)
+            {
+                inputHandler[key] = 0f;
+            }
+        }
     }
 }

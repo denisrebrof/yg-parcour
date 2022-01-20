@@ -14,5 +14,7 @@ namespace Gameplay.Inputs
             var y = handler.GetInput("Vertical");
             return new Vector2(x, y);
         }
+
+        public bool GetRunningInput() => handler.GetInput("Run") > 0.5f;
     }
 }
