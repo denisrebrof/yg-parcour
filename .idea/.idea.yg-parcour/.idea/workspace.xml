@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/FirstPersonLook/FirstPersonLookDeltaProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/FirstPersonLook/FirstPersonLookDeltaProviderRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +27,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/d.rebrov/yg-parcour/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23QLc2h0yDW4r1yqumiPqo84R54" />
@@ -66,10 +63,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="7944">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1660">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="7944" />
+      <option name="pid" value="1660" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -96,6 +93,7 @@
       <workItem from="1642513002680" duration="1777000" />
       <workItem from="1642535308413" duration="2142000" />
       <workItem from="1642589202394" duration="10501000" />
+      <workItem from="1642666808463" duration="450000" />
     </task>
     <servers />
   </component>
@@ -147,6 +145,45 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputButton.cs</url>
+          <line>29</line>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\InputButton.cs" initialLine="29" containingFunctionPresentation="method 'FireInput'">
+            <startOffsets>
+              <option value="902" />
+            </startOffsets>
+            <endOffsets>
+              <option value="939" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\Jumping\JumpInputProviderRouter.cs" initialLine="23" containingFunctionPresentation="method 'GetHasJumpInput'">
+            <startOffsets>
+              <option value="817" />
+            </startOffsets>
+            <endOffsets>
+              <option value="906" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\ExternalAssets\Mini First Person Controller\Scripts\Components\Jump.cs" initialLine="29" containingFunctionPresentation="method 'LateUpdate'">
+            <startOffsets>
+              <option value="744" />
+            </startOffsets>
+            <endOffsets>
+              <option value="771" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

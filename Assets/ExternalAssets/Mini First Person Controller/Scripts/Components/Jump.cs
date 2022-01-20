@@ -27,7 +27,9 @@ public class Jump : MonoBehaviour
 
     void LateUpdate()
     {
-        if (!jumpInputProvider.GetHasJumpInput() || !groundCheck || groundCheck.isGrounded) return;
+        var hasInput = jumpInputProvider.GetHasJumpInput();
+        var grounded = !groundCheck || groundCheck.isGrounded;
+        if (!hasInput || !grounded) return;
         myRigidbody.AddForce(Vector3.up * 100 * jumpStrength);
         Jumped?.Invoke();
     }
