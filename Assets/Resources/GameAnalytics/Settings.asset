@@ -30,7 +30,7 @@ MonoBehaviour:
   secretKey:
   - 0eaaea129547095f2bbe65792f2fc2f7da09926a
   Build:
-  - 0.3
+  - 1.0.6.y
   SelectedPlatformOrganization:
   - Upreality
   SelectedPlatformStudio:

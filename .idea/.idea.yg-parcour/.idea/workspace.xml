@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDKAssembly.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/FillWgl.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/FillWgl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/CrazyAds/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +98,7 @@
       <workItem from="1642535308413" duration="2142000" />
       <workItem from="1642589202394" duration="10501000" />
       <workItem from="1642666808463" duration="5876000" />
-      <workItem from="1642752623792" duration="18825000" />
+      <workItem from="1642752623792" duration="20688000" />
     </task>
     <servers />
   </component>
@@ -241,5 +228,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

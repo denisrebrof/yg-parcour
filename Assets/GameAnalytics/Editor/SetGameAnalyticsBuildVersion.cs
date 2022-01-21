@@ -13,7 +13,7 @@ namespace GameAnalytics.Editor
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            var result = AssetDatabase.FindAssets("Settings", new[] {"Resources/GameAnalytics"});
+            var result = AssetDatabase.FindAssets("Settings", new[] {"Assets/Resources/GameAnalytics"});
             var path = AssetDatabase.GUIDToAssetPath(result[0]);
             var settingsObject = (Settings) AssetDatabase.LoadAssetAtPath(path, typeof(Settings));
             var version = BuildPlatformVersionProvider.GetBuildVersion();
