@@ -1,0 +1,18 @@
+{
+    "name": "AnalyticsAssembly",
+    "rootNamespace": "Analytics",
+    "references": [
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:26e49315e2a59f441898fd21897eecc2",
+        "GUID:120dfe406a14eff4d9e33944f86e2724"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

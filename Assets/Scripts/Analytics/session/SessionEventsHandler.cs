@@ -1,15 +1,14 @@
+using Analytics.Analytics.session;
 using Analytics.levels;
-using Analytics.session;
-using Levels.domain.repositories;
 using UnityEngine;
 using Zenject;
 
-namespace Analytics.presentation
+namespace Analytics.session
 {
     public class SessionEventsHandler : MonoBehaviour
     {
         [Inject] private AnalyticsAdapter analytics;
-        [Inject] private ICurrentLevelRepository currentLevelRepository;
+        [Inject] private ISessionEventLevelIdProvider levelIdProvider;
 
         private void Awake() => SendEvent(SessionEvent.Start);
 
@@ -17,7 +16,7 @@ namespace Analytics.presentation
 
         private void SendEvent(SessionEvent sessionEvent)
         {
-            var levelId = currentLevelRepository.GetCurrentLevel().ID;
+            var levelId = levelIdProvider.GetCurrentLevelId();
             var pointer = new LevelPointer(levelId);
             analytics.SendSessionEvent(sessionEvent, pointer);
         }

@@ -1,8 +1,10 @@
+using Analytics.Analytics.session;
 using Levels.adapters;
 using Levels.data;
 using Levels.data.dao;
 using Levels.domain;
 using Levels.domain.repositories;
+using Levels.presentation.analytics;
 using UnityEngine;
 using Zenject;
 
@@ -31,6 +33,10 @@ namespace Levels._di
             Container
                 .Bind<CompleteCurrentLevelUseCase.IRewardHandler>()
                 .To<StubLevelRewardHandlerAdapter>()
+                .AsSingle();
+            Container
+                .Bind<ISessionEventLevelIdProvider>()
+                .To<SessionEventCurrentLevelIdProviderImpl>()
                 .AsSingle();
         }
     }

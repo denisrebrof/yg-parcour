@@ -14,7 +14,6 @@ namespace Analytics
         public abstract void SendScreenEvent(string screenName, ScreenAction action);
         public abstract void SendLevelEvent(LevelPointer levelPointer, LevelEvent levelEvent);
         public abstract void SendSessionEvent(SessionEvent sessionEvent, LevelPointer currentLevelPointer);
-        
         public abstract void SendErrorEvent(string error);
     }
 }
