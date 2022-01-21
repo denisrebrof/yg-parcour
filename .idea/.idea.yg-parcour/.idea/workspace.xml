@@ -2,41 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/DoozyEngine.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/DoozyEngine.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/DOTweenAssembly.asmdef" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/DOTweenAssembly.asmdef.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/ISessionEventLevelIdProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/ISessionEventLevelIdProvider.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/SessionEventCurrentLevelIdProviderImpl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/SessionEventCurrentLevelIdProviderImpl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDKAssembly.csproj.DotSettings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalytics.dll.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CrazySDK.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Poki.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VKSDK.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameAnalytics.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GameAnalytics.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorCounterDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorCounterDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEventsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEventsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/FillWgl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/FillWgl.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/ZipBuild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,12 +39,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/PokiInterstitialAdNavigator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/TestBuildAssemblyFilter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditorModule/SpriteOutlineModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/PrefabLayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -126,7 +111,7 @@
       <workItem from="1642535308413" duration="2142000" />
       <workItem from="1642589202394" duration="10501000" />
       <workItem from="1642666808463" duration="5876000" />
-      <workItem from="1642752623792" duration="15723000" />
+      <workItem from="1642752623792" duration="18825000" />
     </task>
     <servers />
   </component>
