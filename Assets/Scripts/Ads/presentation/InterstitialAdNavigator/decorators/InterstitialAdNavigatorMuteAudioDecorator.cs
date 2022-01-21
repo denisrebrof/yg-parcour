@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using Zenject;
 
-namespace Ads
+namespace Ads.presentation.InterstitialAdNavigator.decorators
 {
     public class InterstitialAdNavigatorMuteAudioDecorator : MonoBehaviour, IInterstitalAdNavigator
     {

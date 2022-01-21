@@ -3,7 +3,7 @@ using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Ads
+namespace Ads.presentation.InterstitialAdNavigator.decorators
 {
     public class InterstitialAdNavigatorLockLookDecorator : MonoBehaviour, IInterstitalAdNavigator
     {

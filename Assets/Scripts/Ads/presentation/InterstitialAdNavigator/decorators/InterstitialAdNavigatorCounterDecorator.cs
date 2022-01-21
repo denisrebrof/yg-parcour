@@ -1,15 +1,17 @@
 using System;
 using System.Collections;
+using Analytics;
 using GameAnalyticsSDK;
 using UniRx;
 using UnityEngine;
 using Zenject;
 
-namespace Ads
+namespace Ads.presentation.InterstitialAdNavigator.decorators
 {
     public class InterstitialAdNavigatorCounterDecorator : MonoBehaviour, IInterstitalAdNavigator
     {
         [Inject] private IInterstitalAdNavigator adNavigator;
+        [Inject] private AnalyticsAdapter analytics;
         [SerializeField] private string configKey;
         [SerializeField] private string configKeyY;
         [SerializeField] private string configKeyV;
@@ -45,7 +47,7 @@ namespace Ads
             }
             catch (Exception e)
             {
-                GameAnalytics.NewErrorEvent(GAErrorSeverity.Error, e.ToString());
+                analytics.SendErrorEvent(e.ToString());
             }
         }
 
