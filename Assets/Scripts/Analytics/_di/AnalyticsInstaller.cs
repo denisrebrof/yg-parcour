@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using GameAnalyticsSDK;
+using UnityEngine;
 using Zenject;
 
 namespace Analytics._di

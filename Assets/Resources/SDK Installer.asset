@@ -17,3 +17,5 @@ MonoBehaviour:
   vksdk: {fileID: 8347276216867202255, guid: 8aafd036d5b362847b07571b868957e4, type: 3}
   pokiUnitySDK: {fileID: 6218128298219664141, guid: 0012be92765abbc4bb8e2e1194725205,
     type: 3}
+  crazySDK: {fileID: 7048765409983528566, guid: 2ef7a1328ffc63c4cb63e813ae3b89bc,
+    type: 3}

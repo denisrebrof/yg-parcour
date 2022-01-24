@@ -2,46 +2,46 @@ using System.Collections;
 using Doozy.Engine;
 using UnityEngine;
 
-public class FallController : MonoBehaviour
+namespace Gameplay
 {
-    private FirstPersonLook look;
-    [SerializeField] private float turnUpDuration = 1f;
-    [SerializeField] private string fallenEvent = "Die";
-
-    void Awake()
+    public class FallController : MonoBehaviour
     {
-        look = FindObjectOfType<FirstPersonLook>();
-    }
+        private FirstPersonLook look;
+        [SerializeField] private float turnUpDuration = 1f;
+        [SerializeField] private string fallenEvent = "Die";
 
-    private void StopFall()
-    {
-        look.enabled = true;
-        GameEventMessage.SendEvent(fallenEvent);
-    }
+        private void Awake() => look = FindObjectOfType<FirstPersonLook>();
 
-    public void AbortFall()
-    {
-        StopAllCoroutines();
-        StopFall();
-    }
-
-    public void StartFall() => StartCoroutine(Fall());
-
-    private IEnumerator Fall()
-    {
-        look.enabled = false;
-        var lookTransform = look.transform;
-        var initialRotation = lookTransform.localRotation;
-        var lookRotation = Quaternion.LookRotation(Vector3.up);
-
-        var timer = turnUpDuration;
-        while (timer > 0)
+        private void StopFall()
         {
-            timer -= Time.deltaTime;
-            lookTransform.localRotation = Quaternion.Lerp(initialRotation, lookRotation, 1f - timer / turnUpDuration);
-            yield return null;
+            look.enabled = true;
+            GameEventMessage.SendEvent(fallenEvent);
         }
 
-        StopFall();
+        public void AbortFall()
+        {
+            StopAllCoroutines();
+            StopFall();
+        }
+
+        public void StartFall() => StartCoroutine(Fall());
+
+        private IEnumerator Fall()
+        {
+            look.enabled = false;
+            var lookTransform = look.transform;
+            var initialRotation = lookTransform.localRotation;
+            var lookRotation = Quaternion.LookRotation(Vector3.up);
+
+            var timer = turnUpDuration;
+            while (timer > 0)
+            {
+                timer -= Time.deltaTime;
+                lookTransform.localRotation = Quaternion.Lerp(initialRotation, lookRotation, 1f - timer / turnUpDuration);
+                yield return null;
+            }
+
+            StopFall();
+        }
     }
 }

@@ -10,11 +10,11 @@ namespace SDK.Editor
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            const string templateValue = "Universal2020";
+            string templateValue = "Universal2020";
 #if POKI_SDK
-            const string templateValue = "poki-template";
+            templateValue = "poki-template";
 #elif CRAZY_SDK
-            const string templateValue = "Crazy_2020";
+            templateValue = "Crazy_2020";
 #endif
 #pragma warning disable 618
             PlayerSettings.SetPropertyString("template", "PROJECT:" + templateValue, BuildTargetGroup.WebGL);

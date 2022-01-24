@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2e4d2ba3a84054945e0ff184944b21, type: 3}
   m_Name: Analytics Installer
   m_EditorClassIdentifier: 
-  gameAnalyticsPrefab: {fileID: 0}
+  gameAnalyticsPrefab: {fileID: 3547765188993425363, guid: 0fbe42ce685c381478d289eb8d77e1c1,
+    type: 3}

@@ -14,7 +14,7 @@ namespace Analytics.Editor
         };
 
         [MenuItem("AnalyticsSDK/Set Game Analytics", false)]
-        public static void SetYandex() => SetSDKType(AnalyticsType.GameAnalytics);
+        public static void SetGameAnalytics() => SetSDKType(AnalyticsType.GameAnalytics);
         
         [MenuItem("AnalyticsSDK/Set Debug", false)]
         public static void SetDebug() => SetSDKType(AnalyticsType.Debug);

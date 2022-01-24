@@ -10,6 +10,8 @@
         return SDKType.Vk;
 #elif POKI_SDK
         return SDKType.Poki;
+#elif CRAZY_SDK
+        return SDKType.Crazy;
 #endif
             return SDKType.None;
         }
@@ -19,7 +21,8 @@
             None,
             Yandex,
             Vk,
-            Poki
+            Poki,
+            Crazy
         }
     }
 }

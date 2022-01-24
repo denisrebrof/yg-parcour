@@ -51,7 +51,7 @@ public class SDKInstaller : ScriptableObjectInstaller
         Container.Bind<PokiUnitySDK>().FromInstance(instance).AsSingle();
 #elif CRAZY_SDK
         var instance = Instantiate(crazySDK);
-        instance.gameObject.name = "CRAZY_SDK";
+        instance.gameObject.name = "CrazySDK";
         Container.Bind<CrazySDK>().FromInstance(instance).AsSingle();
 #endif
     }

@@ -10,7 +10,7 @@ EditorSettings:
   m_PrefabRegularEnvironment: {fileID: 102900000, guid: 76f4386d3b8147749bba8487f18837a2,
     type: 3}
   m_PrefabUIEnvironment: {fileID: 0}
-  m_SpritePackerMode: 0
+  m_SpritePackerMode: 4
   m_SpritePackerPaddingPower: 1
   m_Bc7TextureCompressor: 0
   m_EtcTextureCompressorBehavior: 1

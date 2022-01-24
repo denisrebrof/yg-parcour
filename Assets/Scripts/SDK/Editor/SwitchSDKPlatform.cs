@@ -11,6 +11,7 @@ namespace SDK.Editor
             { SDKProvider.SDKType.Yandex, "YANDEX_SDK" },
             { SDKProvider.SDKType.Vk, "VK_SDK" },
             { SDKProvider.SDKType.Poki, "POKI_SDK" },
+            { SDKProvider.SDKType.Crazy, "CRAZY_SDK" },
             { SDKProvider.SDKType.None, "" }
         };
 
@@ -19,6 +20,12 @@ namespace SDK.Editor
 
         [MenuItem("Platform/Set VK", false)]
         public static void SetVk() => SetSDKType(SDKProvider.SDKType.Vk);
+        
+        [MenuItem("Platform/Set Poki", false)]
+        public static void SetPoki() => SetSDKType(SDKProvider.SDKType.Poki);
+        
+        [MenuItem("Platform/Set Crazy", false)]
+        public static void SetCrazy() => SetSDKType(SDKProvider.SDKType.Crazy);
 
         [MenuItem("Platform/Set None", false)]
         public static void SetNone() => SetSDKType(SDKProvider.SDKType.None);
