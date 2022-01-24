@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-public class YandexSDK : MonoBehaviour {
-    public static YandexSDK instance;
-    
-    #if YANDEX_SDK
-    
+namespace Plugins.YSDK
+{
+    public class YandexSDK : MonoBehaviour
+    {
+        public static YandexSDK instance;
+
+#if YANDEX_SDK
     [DllImport("__Internal")]
     private static extern void GetUserData();
-    
+    [DllImport("__Internal")]
+    private static extern void RequestPlayerId();
     [DllImport("__Internal")]
     private static extern string GetLang();
     [DllImport("__Internal")]
@@ -39,6 +42,7 @@ public class YandexSDK : MonoBehaviour {
     public UserData user;
     public event Action onUserDataReceived;
 
+    public event Action<string> onPlayerIdReceived;
     public event Action onInterstitialShown;
     public event Action<string> onInterstitialFailed;
     /// <summary>
@@ -82,6 +86,12 @@ public class YandexSDK : MonoBehaviour {
     public string GetLanguage()
     {
         return GetLang();
+    }
+    
+    
+    public void RequestPlayerIndentifier()
+    {
+        RequestPlayerId();
     }
 	
 	public bool GetIsOnDesktop() => !GetDeviceType().ToLower().Contains("mobile");
@@ -153,14 +163,23 @@ public class YandexSDK : MonoBehaviour {
         rewardedAdPlacementsAsInt.Clear();
     }
     
-    #endif
+    /// <summary>
+    /// Callback from index.html
+    /// </summary>
+    /// /// <param name="playerId"></param>
+    public void OnHandlePlayerId(string playerId) {
+        if(onPlayerIdReceived!=null) onPlayerIdReceived.Invoke(playerId);
+    }
 
-}
+#endif
+    }
 
-public struct UserData {
-    public string id;
-    public string name;
-    public string avatarUrlSmall;
-    public string avatarUrlMedium;
-    public string avatarUrlLarge;
+    public struct UserData
+    {
+        public string id;
+        public string name;
+        public string avatarUrlSmall;
+        public string avatarUrlMedium;
+        public string avatarUrlLarge;
+    }
 }

@@ -1,4 +1,5 @@
 using CrazyGames;
+using Plugins.VKSDK;
 using SDK.presentation.HappyTime;
 using SDK.presentation.HappyTime.controller;
 using SDK.presentation.Platform;
@@ -8,7 +9,7 @@ using Zenject;
 [CreateAssetMenu(menuName = "Installers/SDKInstaller")]
 public class SDKInstaller : ScriptableObjectInstaller
 {
-    [SerializeField] private YandexSDK yandexSDK;
+    [SerializeField] private Plugins.YSDK.YandexSDK yandexSDK;
     [SerializeField] private VKSDK vksdk;
     [SerializeField] private PokiUnitySDK pokiUnitySDK;
 
@@ -40,7 +41,7 @@ public class SDKInstaller : ScriptableObjectInstaller
 #if YANDEX_SDK
             var instance = Instantiate(yandexSDK);
             instance.gameObject.name = "YandexSDK";
-            Container.Bind<YandexSDK>().FromInstance(instance).AsSingle();
+            Container.Bind<Plugins.YSDK.YandexSDK>().FromInstance(instance).AsSingle();
 #elif VK_SDK
         var instance = Instantiate(vksdk);
         instance.gameObject.name = "VKSDK";

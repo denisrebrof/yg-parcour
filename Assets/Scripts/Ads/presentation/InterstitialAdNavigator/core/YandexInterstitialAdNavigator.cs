@@ -6,7 +6,7 @@ namespace Ads.presentation.InterstitialAdNavigator.core
 {
     public class YandexInterstitialAdNavigator : IInterstitalAdNavigator
     {
-        [Inject] private YandexSDK instance;
+        [Inject] private Plugins.YSDK.YandexSDK instance;
         public IObservable<ShowInterstitialResult> ShowAd()
         {
 #if YANDEX_SDK && !UNITY_EDITOR

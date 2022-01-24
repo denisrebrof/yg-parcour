@@ -10,8 +10,7 @@
                     console.info('adv closed!');
                   }
                 }
-              })
-                .then(ysdk => {
+              }).then(ysdk => {
                   sdk = ysdk;
                   sdk.adv.showFullscreenAdv({ callbacks: {} });
                 });
@@ -66,7 +65,7 @@
                 return sdk.environment.browser.lang
               }
         </script>
-		
+
 		<!-- Получение устройства -->
         <script>
               function getDeviceType() {
@@ -74,3 +73,14 @@
               }
         </script>
 
+        <script>
+              function requestPlayerId() {
+                  sdk.getPlayer({ scopes: false }).then(_player => {
+                      var playerId = _player.getUniqueID()
+                      window.unityInstance.SendMessage('YandexSDK', 'OnHandlePlayerId', playerId);
+                      console.log('Handle player id');
+                  }).catch(err => {
+                      // Ignore
+                  });
+              }
+        </script>

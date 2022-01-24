@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/ResetInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/ResetInput.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/Script/CrazySDKInit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/Script/CrazySDKInit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementDesktopInputProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementDesktopInputProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementMobileInputProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementMobileInputProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDKAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDKAssembly.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDKAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDKAssembly.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/_di/LocalizationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/_di/LocalizationInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound/music_dave_miles_shades_of_orange.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640340061366</updated>
       <workItem from="1642669296477" duration="1549000" />
+      <workItem from="1643045391008" duration="315000" />
     </task>
     <servers />
   </component>

@@ -49,6 +49,7 @@ namespace SDK.Editor
                 Debug.Log("empty head");
                 return Array.Empty<string>();
 #endif
+                return ReadLinesFromFile(headFilePath);
             }
         }
 
@@ -64,6 +65,7 @@ namespace SDK.Editor
                 Debug.Log("empty body");
                 return Array.Empty<string>();
 #endif
+                return ReadLinesFromFile(bodyFilePath);
             }
         }
 

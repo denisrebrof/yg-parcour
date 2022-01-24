@@ -4,7 +4,7 @@ namespace SDK.presentation.Platform
 {
     public class YandexPlatformProvider: IPlatformProvider
     {
-        [Inject] private YandexSDK sdk; 
+        [Inject] private Plugins.YSDK.YandexSDK sdk; 
         
         public Platform GetCurrentPlatform()
         {

@@ -1,8 +1,11 @@
 {
     "name": "YandexSDKAssembly",
-    "rootNamespace": "YandexSDK",
+    "rootNamespace": "",
     "references": [],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor",
+        "WebGL"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
