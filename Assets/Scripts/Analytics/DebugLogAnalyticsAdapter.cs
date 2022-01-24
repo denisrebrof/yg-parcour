@@ -7,8 +7,15 @@ using UnityEngine;
 
 namespace Analytics
 {
-    public class DebugLogAnalyticsAdapter: AnalyticsAdapter
+    public class DebugLogAnalyticsAdapter : AnalyticsAdapter
     {
+        private readonly bool loggingEnabled = false;
+
+        public DebugLogAnalyticsAdapter(bool loggingEnabled)
+        {
+            this.loggingEnabled = loggingEnabled;
+        }
+
         public override void SendAdEvent(AdAction action, AdType type, AdProvider provider, IAdPlacement placement)
         {
             Log(" SendAdEvent: " + action + ' ' + type);
@@ -39,8 +46,9 @@ namespace Analytics
             Log("SendErrorEvent: " + error);
         }
 
-        private static void Log(string text)
+        private void Log(string text)
         {
+            if (!loggingEnabled) return;
             Debug.Log("Debug Analytics Event: " + text);
         }
     }

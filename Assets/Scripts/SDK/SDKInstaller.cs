@@ -60,8 +60,8 @@ public class SDKInstaller : ScriptableObjectInstaller
     {
 #if YANDEX_SDK && !UNITY_EDITOR
         Container.Bind<IPlatformProvider>().To<YandexPlatformProvider>().AsSingle();
-#elif UNITY_EDITOR
-        Container.Bind<IPlatformProvider>().To<MobilePlatformProvider>().AsSingle();
+// #elif UNITY_EDITOR
+//         Container.Bind<IPlatformProvider>().To<MobilePlatformProvider>().AsSingle();
 #else
         Container.Bind<IPlatformProvider>().To<DesktopPlatformProvider>().AsSingle();
 #endif

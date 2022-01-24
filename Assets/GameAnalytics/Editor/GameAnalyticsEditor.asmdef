@@ -1,9 +1,8 @@
 {
-    "name": "SDKEditor",
+    "name": "GameAnalyticsEditor",
     "rootNamespace": "",
     "references": [
-        "GUID:26e49315e2a59f441898fd21897eecc2",
-        "GUID:7db0ec06f687b9c4b9053cfbbe276f7c"
+        "GUID:17e6e8bec60f02b428a694e7bb6b8b13"
     ],
     "includePlatforms": [
         "Editor"
@@ -13,7 +12,9 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "GAME_ANALYTICS"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }

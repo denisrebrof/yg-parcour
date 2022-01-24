@@ -1,8 +1,14 @@
 {
-    "name": "GameAnalyticsAssembly",
-    "rootNamespace": "GameAnalytics",
-    "references": [],
-    "includePlatforms": [],
+    "name": "AnalyticsEditor",
+    "rootNamespace": "",
+    "references": [
+        "EditorUtils",
+        "SDK",
+        "GAnalytics"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

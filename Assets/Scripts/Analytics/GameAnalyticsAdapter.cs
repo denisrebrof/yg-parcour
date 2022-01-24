@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if GAME_ANALYTICS
+using System;
 using System.Collections.Generic;
 using Analytics.ads;
 using Analytics.levels;
@@ -95,3 +96,4 @@ namespace Analytics
         }
     }
 }
+#endif

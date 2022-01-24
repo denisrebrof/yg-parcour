@@ -2,10 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/GAnalytics.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/GAnalytics.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/Playmaker/Examples/GameAnalyticsPlayMakerDemo.unitypackage.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Plugins/Zenject/Source/Zenject.csproj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/domain.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsEditor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsEditor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SwitchAnalyticsSDK.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SwitchAnalyticsSDK.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RemoteConfig.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/DefineSymbolsFieldController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/DefineSymbolsFieldController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/EditorUtils.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/EditorUtils.asmdef.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/SetGameAnalyticsBuildVersion.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsInitializer.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsInitializer.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalyticsAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/CrazySDK.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins/GameAnalyticsAssembly.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsEditor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/CrazySDKAssembly.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/CrazySDKAssembly.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/CrazySDK/CrazySDK.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorCounterDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorCounterDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Analytics.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAssembly.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Analytics.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SDKEditor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SDKEditor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDK.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKAssembly.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDK.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +73,23 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/PokiInterstitialAdNavigator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/TestBuildAssemblyFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditorModule/SpriteOutlineModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/PrefabLayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@3.2.0/PostProcessing/Editor/Utils/GlobalSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_SDFShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/TestBuildAssemblyFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/PrefabLayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.29/UnityEditor.TestRunner/Api/ExecutionSettings.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23QLc2h0yDW4r1yqumiPqo84R54" />
   <component name="ProjectLevelVcsManager">
@@ -56,7 +107,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.build.unityPlugin" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -102,6 +153,10 @@
       <workItem from="1642589202394" duration="10501000" />
       <workItem from="1642666808463" duration="5876000" />
       <workItem from="1642752623792" duration="23280000" />
+      <workItem from="1642848306213" duration="1544000" />
+      <workItem from="1642931977595" duration="2729000" />
+      <workItem from="1642934760211" duration="1233000" />
+      <workItem from="1643009776277" duration="3166000" />
     </task>
     <servers />
   </component>
@@ -154,79 +209,37 @@
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputButton.cs</url>
           <line>27</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\InputButton.cs" initialLine="27" containingFunctionPresentation="method 'FireInput'">
-            <startOffsets>
-              <option value="803" />
-            </startOffsets>
-            <endOffsets>
-              <option value="838" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\InputButton.cs" initialLine="27" containingFunctionPresentation="method 'FireInput'" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/InputButton.cs</url>
           <line>29</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\InputButton.cs" initialLine="29" containingFunctionPresentation="method 'FireInput'">
-            <startOffsets>
-              <option value="882" />
-            </startOffsets>
-            <endOffsets>
-              <option value="919" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\InputButton.cs" initialLine="29" containingFunctionPresentation="method 'FireInput'" />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs</url>
           <line>23</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\Jumping\JumpInputProviderRouter.cs" initialLine="23" containingFunctionPresentation="method 'GetHasJumpInput'">
-            <startOffsets>
-              <option value="817" />
-            </startOffsets>
-            <endOffsets>
-              <option value="906" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Gameplay\PlayerInput\Jumping\JumpInputProviderRouter.cs" initialLine="23" containingFunctionPresentation="method 'GetHasJumpInput'" />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs</url>
           <line>31</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\ExternalAssets\Mini First Person Controller\Scripts\Components\Jump.cs" initialLine="29" containingFunctionPresentation="method 'LateUpdate'">
-            <startOffsets>
-              <option value="744" />
-            </startOffsets>
-            <endOffsets>
-              <option value="771" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\ExternalAssets\Mini First Person Controller\Scripts\Components\Jump.cs" initialLine="29" containingFunctionPresentation="method 'LateUpdate'" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs</url>
           <line>30</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="27" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="846" />
-            </startOffsets>
-            <endOffsets>
-              <option value="897" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="27" containingFunctionPresentation="method 'Start'" />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs</url>
           <line>31</line>
-          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="31" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="914" />
-            </startOffsets>
-            <endOffsets>
-              <option value="928" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\Scripts\Sound\presentation\DownloadAndPlayAudio.cs" initialLine="31" containingFunctionPresentation="method 'Start'" />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>

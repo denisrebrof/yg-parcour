@@ -2,14 +2,14 @@
 using UniRx;
 using Zenject;
 
-namespace Ads.InterstitialAdNavigator
+namespace Ads.presentation.InterstitialAdNavigator.core
 {
     public class YandexInterstitialAdNavigator : IInterstitalAdNavigator
     {
         [Inject] private YandexSDK instance;
         public IObservable<ShowInterstitialResult> ShowAd()
         {
-#if YANDEX_SDK
+#if YANDEX_SDK && !UNITY_EDITOR
             var interstitialShownObservable = Observable.FromEvent(
                 handler => instance.onInterstitialShown += handler,
                 handler => instance.onInterstitialShown -= handler
