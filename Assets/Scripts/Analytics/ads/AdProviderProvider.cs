@@ -1,4 +1,5 @@
 ﻿using SDK;
+using SDK.SDKType;
 
 namespace Analytics.ads
 {

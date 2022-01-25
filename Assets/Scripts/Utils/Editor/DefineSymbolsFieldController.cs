@@ -15,8 +15,11 @@ namespace Utils.Editor
         {
             CleanDefineSymbols();
             var symbolValue = Symbols[fieldValueVariant];
-            if (string.IsNullOrWhiteSpace(symbolValue)) return;
-            SetPlatformDefineSymbol(symbolValue);
+            if (!string.IsNullOrWhiteSpace(symbolValue))
+            {
+                SetPlatformDefineSymbol(symbolValue);
+            }
+            AssetDatabase.Refresh();
         }
 
         private void CleanDefineSymbols()

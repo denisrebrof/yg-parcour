@@ -1,6 +1,6 @@
 ﻿using Gameplay.Input;
 using Gameplay.Inputs.Jump;
-using SDK.presentation.Platform;
+using SDK.Platform.domain;
 using Zenject;
 
 namespace Gameplay.Inputs

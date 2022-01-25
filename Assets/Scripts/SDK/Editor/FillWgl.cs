@@ -41,12 +41,12 @@ namespace SDK.Editor
         {
             get
             {
+                var headFilePath = "insertHeadJs";
 #if YANDEX_SDK
-                const string headFilePath = "insertHeadJsY";
+                headFilePath = "insertHeadJsY";
 #elif VK_SDK
-                const string headFilePath = "insertHeadJsV";
+                headFilePath = "insertHeadJsV";
 #else
-                Debug.Log("empty head");
                 return Array.Empty<string>();
 #endif
                 return ReadLinesFromFile(headFilePath);
@@ -57,12 +57,12 @@ namespace SDK.Editor
         {
             get
             {
+                var bodyFilePath = "insertBodyJs";
 #if YANDEX_SDK
-                const string bodyFilePath = "insertBodyJsY";
+                bodyFilePath = "insertBodyJsY";
 #elif VK_SDK
-                const string bodyFilePath = "insertBodyJsV";
+                bodyFilePath = "insertBodyJsV";
 #else
-                Debug.Log("empty body");
                 return Array.Empty<string>();
 #endif
                 return ReadLinesFromFile(bodyFilePath);

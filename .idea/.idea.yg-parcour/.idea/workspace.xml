@@ -2,24 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/HappyTime.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/YandexPlatformProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/presentation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/_di.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/_di/PlayerDataInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/_di/PlayerDataInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/_di.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDKAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/VKSDK/VKSDKAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDKAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDKAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/_di/LocalizationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/_di/LocalizationInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Scripts/GameEventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Scripts/GameEventManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonLook.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/FirstPersonLook.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsSetPlayerId.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsSetPlayerId.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/GetPlayerId.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/GetPlayerId.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Analytics Installer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Analytics Installer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hints Installer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Hints Installer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Levels Base Installer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Levels Base Installer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalizationInstaller.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/LocalizationInstaller.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SDK Installer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/SDK Installer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sound Installer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sound Installer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/domain.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/Analytics.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Analytics.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAdapter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/AnalyticsAdapter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/DebugLogAnalyticsAdapter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsEditor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/AnalyticsEditor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/GameAnalyticsAdapter.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/ads/AdProviderProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/ads/AdProviderProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/FirstPersonLook/FirstPersonLookDeltaProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/FirstPersonLook/FirstPersonLookDeltaProviderRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Jumping/JumpInputProviderRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gameplay/PlayerInput/Movement/MovementInputProviderRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RemoteConfig.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/BuildPlatformVersionProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/BuildPlatformVersionProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/BuildPlatformVersionProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/FillWgl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SwitchSDKPlatform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDK.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDK.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/_di/SDKInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/_di/SDKInstaller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/HappyTime.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/IHappyTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/IHappyTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/IHappyTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/IHappyTimeController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/CrazyHappyTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/CrazyHappyTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/CrazyHappyTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/CrazyHappyTimeController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/DebugLogHappyTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/DebugLogHappyTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/DebugLogHappyTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/DebugLogHappyTimeController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/PokiHappyTimeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/PokiHappyTimeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/controller/PokiHappyTimeController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/HappyTime/controller/PokiHappyTimeController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/DesktopPlatformProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/DesktopPlatformProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/DesktopPlatformProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/DesktopPlatformProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/IPlatformProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/IPlatformProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/IPlatformProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/IPlatformProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/MobilePlatformProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/MobilePlatformProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/MobilePlatformProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/MobilePlatformProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/Platform.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/Platform.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/Platform.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/Platform.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/PlatformChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/presentation/PlatformChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/PlatformChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/presentation/PlatformChecker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/Platform/YandexPlatformProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Platform/domain/YandexPlatformProvider.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/SDKChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKTypeChecker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/presentation/SDKChecker.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKTypeChecker.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/DefineSymbolsFieldController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/DefineSymbolsFieldController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +117,6 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditorModule/SpriteOutlineModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity/yg-parcour/Assets/Scripts/SDK/Editor/FillWgl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/presentation/HappyTime/HappyTime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_SDFShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,6 +197,7 @@
       <workItem from="1642934760211" duration="1233000" />
       <workItem from="1643009776277" duration="6533000" />
       <workItem from="1643044567572" duration="1579000" />
+      <workItem from="1643097907816" duration="10139000" />
     </task>
     <servers />
   </component>
