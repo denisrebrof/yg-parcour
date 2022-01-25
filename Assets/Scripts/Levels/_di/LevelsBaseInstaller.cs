@@ -1,4 +1,4 @@
-using Analytics.Analytics.session;
+using Analytics.session.domain;
 using Levels.adapters;
 using Levels.data;
 using Levels.data.dao;

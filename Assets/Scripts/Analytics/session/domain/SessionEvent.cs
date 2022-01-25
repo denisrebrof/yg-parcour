@@ -1,4 +1,4 @@
-﻿namespace Analytics.session
+﻿namespace Analytics.session.domain
 {
     public enum SessionEvent
     {

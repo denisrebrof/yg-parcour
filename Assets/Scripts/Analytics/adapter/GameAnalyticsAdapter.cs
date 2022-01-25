@@ -5,6 +5,7 @@ using Analytics.ads;
 using Analytics.levels;
 using Analytics.screens;
 using Analytics.session;
+using Analytics.session.domain;
 using Analytics.settings;
 using GameAnalyticsSDK;
 
@@ -98,6 +99,11 @@ namespace Analytics
         public override void SetPlayerId(string id)
         {
             GameAnalytics.SetCustomId(id);
+        }
+
+        public override void SendFirstOpenEvent()
+        {
+            GameAnalytics.NewDesignEvent("FirstOpen");
         }
     }
 }

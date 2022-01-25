@@ -1,4 +1,4 @@
-﻿namespace Analytics.Analytics.session
+﻿namespace Analytics.session.domain
 {
     public interface ISessionEventLevelIdProvider
     {

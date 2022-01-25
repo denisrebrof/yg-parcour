@@ -27,6 +27,8 @@ namespace Ads._di
                 .To<VKInterstitialAdNavigator>()
 #elif POKI_SDK
                 .To<PokiInterstitialAdNavigator>()
+#elif CRAZY_SDK
+                .To<CrazyInterstitialAdNavigator>()
 #else
                 .To<DebugLogInterstitialAdNavigator>()
 #endif

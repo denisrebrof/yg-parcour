@@ -80,7 +80,7 @@
                       window.unityInstance.SendMessage('YandexSDK', 'OnHandlePlayerId', playerId);
                       console.log('Handle player id');
                   }).catch(err => {
-                      // Ignore
+                        console.log('Error while requestPlayerId:', err);
                   });
               }
         </script>

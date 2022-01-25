@@ -1,9 +1,9 @@
-using Analytics.Analytics.session;
 using Analytics.levels;
+using Analytics.session.domain;
 using UnityEngine;
 using Zenject;
 
-namespace Analytics.session
+namespace Analytics.session.presentation
 {
     public class SessionEventsHandler : MonoBehaviour
     {

@@ -1,8 +1,7 @@
 ﻿using System;
 using UniRx;
-using Zenject;
 
-namespace Ads.InterstitialAdNavigator
+namespace Ads.presentation.InterstitialAdNavigator.core
 {
     public class PokiInterstitialAdNavigator : IInterstitalAdNavigator
     {

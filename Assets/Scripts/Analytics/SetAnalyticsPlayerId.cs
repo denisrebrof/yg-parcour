@@ -12,6 +12,7 @@ namespace Analytics
 
         private void Start()
         {
+            Debug.Log("GetPlayerIdAvailable: " + playerIdRepository.GetPlayerIdAvailable());
             if (!playerIdRepository.GetPlayerIdAvailable())
                 return;
 
@@ -20,6 +21,7 @@ namespace Analytics
 
         private void SetupId() => playerIdRepository
             .GetPlayerId()
+            .Do(id => Debug.Log("Id received: " + id))
             .Subscribe(id =>
                 analytics.SetPlayerId(id)
             ).AddTo(this);

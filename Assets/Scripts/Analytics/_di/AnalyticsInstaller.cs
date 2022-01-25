@@ -1,6 +1,10 @@
-﻿using GameAnalyticsSDK;
+﻿using Analytics.session.data;
+using Analytics.session.domain;
 using UnityEngine;
 using Zenject;
+#if GAME_ANALYTICS
+using GameAnalyticsSDK;
+#endif
 
 namespace Analytics._di
 {
@@ -28,6 +32,11 @@ namespace Analytics._di
 #else
                 .FromInstance(new DebugLogAnalyticsAdapter(false))
 #endif
+                .AsSingle();
+
+            Container
+                .Bind<IFirstOpenEventSentRepository>()
+                .To<PlayerPrefsFirstOpenEventSentRepository>()
                 .AsSingle();
         }
 

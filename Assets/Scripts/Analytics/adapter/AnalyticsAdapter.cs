@@ -4,6 +4,7 @@ using Analytics.ads.placement;
 using Analytics.levels;
 using Analytics.screens;
 using Analytics.session;
+using Analytics.session.domain;
 using Analytics.settings;
 
 namespace Analytics
@@ -17,5 +18,6 @@ namespace Analytics
         public abstract void SendSessionEvent(SessionEvent sessionEvent, LevelPointer currentLevelPointer);
         public abstract void SendErrorEvent(string error);
         public abstract void SetPlayerId(string id);
+        public abstract void SendFirstOpenEvent();
     }
 }

@@ -3,7 +3,7 @@ using System.Collections;
 using UniRx;
 using UnityEngine;
 
-namespace Ads.InterstitialAdNavigator
+namespace Ads.presentation.InterstitialAdNavigator.core
 {
     public class DebugLogInterstitialAdNavigator: IInterstitalAdNavigator
     {

@@ -9,16 +9,18 @@ namespace Sound.presentation
     public class DownloadAndPlayAudio : MonoBehaviour
     {
         public string url;
+        public string editorUrl;
         public AudioSource source;
 
         IEnumerator Start()
         {
             source = GetComponent<AudioSource>();
+            var targetUrl = url;
 #if UNITY_EDITOR
-            url += "-win";
+            targetUrl = editorUrl;
 #endif
             Debug.Log("Start Loading Audio");
-            UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(url);
+            UnityWebRequest www = UnityWebRequestAssetBundle.GetAssetBundle(targetUrl);
             yield return www.SendWebRequest();
             if (www.result != UnityWebRequest.Result.Success)
             {

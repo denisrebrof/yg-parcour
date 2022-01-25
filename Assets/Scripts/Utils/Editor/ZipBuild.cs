@@ -16,7 +16,7 @@ namespace Utils.Editor
             if (target != BuildTarget.WebGL)
                 return;
 
-#if YANDEX_SDK || POKI_SDK
+#if YANDEX_SDK || POKI_SDK || CRAZY_SDK
             var projectRootPath = Directory.GetParent(Application.dataPath)?.FullName;
             if(projectRootPath==null) return;
             var script = Directory.GetFiles(projectRootPath).First(file => file.Contains("zip_build"));

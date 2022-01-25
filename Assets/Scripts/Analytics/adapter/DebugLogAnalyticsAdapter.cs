@@ -2,6 +2,7 @@
 using Analytics.levels;
 using Analytics.screens;
 using Analytics.session;
+using Analytics.session.domain;
 using Analytics.settings;
 using UnityEngine;
 
@@ -49,6 +50,11 @@ namespace Analytics
         public override void SetPlayerId(string id)
         {
             Log("Set player id: " + id);
+        }
+
+        public override void SendFirstOpenEvent()
+        {
+            Log("First Open");
         }
 
         private void Log(string text)
