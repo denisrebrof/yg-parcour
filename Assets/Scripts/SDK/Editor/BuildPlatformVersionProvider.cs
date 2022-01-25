@@ -12,6 +12,7 @@ namespace SDK
                 SDKProvider.SDKType.Yandex => "y",
                 SDKProvider.SDKType.Vk => "v",
                 SDKProvider.SDKType.Poki => "p",
+                SDKProvider.SDKType.Crazy => "c",
                 _ => string.Empty
             };
 

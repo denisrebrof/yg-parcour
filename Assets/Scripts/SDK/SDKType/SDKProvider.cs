@@ -5,7 +5,7 @@
         public static SDKType GetSDK()
         {
 #if YANDEX_SDK
-            return SDKType.Yandex;
+        return SDKType.Yandex;
 #elif VK_SDK
         return SDKType.Vk;
 #elif POKI_SDK
@@ -13,7 +13,7 @@
 #elif CRAZY_SDK
         return SDKType.Crazy;
 #endif
-            return SDKType.None;
+        return SDKType.None;
         }
 
         public enum SDKType

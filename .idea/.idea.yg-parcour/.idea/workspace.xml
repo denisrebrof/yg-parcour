@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/CrazyInterstitialAdNavigator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/CrazyInterstitialAdNavigator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/data/PlayerPrefsFirstOpenEventSentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/data/PlayerPrefsFirstOpenEventSentRepository.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/domain/IFirstOpenEventSentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/domain/IFirstOpenEventSentRepository.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsInitializer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Portal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Portal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Plate/Plate.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Plate/Plate.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enviroment/Water.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enviroment/Water.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platforms/Block _1x3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platforms/Block _1x3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Platforms/Plates.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Platforms/Plates.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/LevelItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/LevelItem.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/DebugLogInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/DebugLogInterstitialAdNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/PokiInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/PokiInterstitialAdNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/ISessionEventLevelIdProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/ISessionEventLevelIdProvider.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEvent.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEvent.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEventsHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/SessionEventsHandler.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/SessionEventCurrentLevelIdProviderImpl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/SessionEventCurrentLevelIdProviderImpl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/presentation/DownloadAndPlayAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI Atlas/complete-portal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI Atlas/complete-portal.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +107,7 @@
       <workItem from="1643009776277" duration="6533000" />
       <workItem from="1643044567572" duration="1579000" />
       <workItem from="1643097907816" duration="12640000" />
-      <workItem from="1643138838163" duration="4360000" />
+      <workItem from="1643138838163" duration="4982000" />
     </task>
     <servers />
   </component>
