@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utils/Editor/ZipBuild.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/BuildPlatformVersionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/Editor/BuildPlatformVersionProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/SDKType/SDKProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +111,7 @@
       <workItem from="1643009776277" duration="6533000" />
       <workItem from="1643044567572" duration="1579000" />
       <workItem from="1643097907816" duration="12640000" />
-      <workItem from="1643138838163" duration="4982000" />
+      <workItem from="1643138838163" duration="5648000" />
     </task>
     <servers />
   </component>
