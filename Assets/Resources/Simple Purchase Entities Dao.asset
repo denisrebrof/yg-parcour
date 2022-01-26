@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d7b150bcdbf4085aa3eb12cd442fc21, type: 3}
+  m_Name: Simple Purchase Entities Dao
+  m_EditorClassIdentifier: 
+  entities:
+  - Id: 0
+    RuName: 
+    RuDescription: 
+    EnName: 
+    EnDescription: 
+    passRewardLevelId: 0
+    coinsCost: 1
+    rewardedVideoCount: 0
+    Type: 0
+    image: {fileID: 21300000, guid: 4698131d177ad97499c1ad33393d2e50, type: 3}
+  - Id: 1
+    RuName: 
+    RuDescription: 
+    EnName: 
+    EnDescription: 
+    passRewardLevelId: 0
+    coinsCost: 2
+    rewardedVideoCount: 0
+    Type: 0
+    image: {fileID: 21300000, guid: d2b14d3d63881fe48be1b89bc6fc85f5, type: 3}
