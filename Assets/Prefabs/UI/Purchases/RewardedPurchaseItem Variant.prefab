@@ -240,9 +240,9 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.0009994507, y: 39.410618}
-  m_SizeDelta: {x: -31.568, y: 60.1132}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 100, y: 40.915928}
+  m_SizeDelta: {x: 160, y: 57.1026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2006813629987649465
 CanvasRenderer:
@@ -438,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 2185279252015274017, guid: 4df6a0015a625df4196993ff7e60396d,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 2185279252015274017, guid: 4df6a0015a625df4196993ff7e60396d,
         type: 3}
@@ -513,7 +513,12 @@ PrefabInstance:
     - target: {fileID: 5385553840971040815, guid: 4df6a0015a625df4196993ff7e60396d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204094675141754693, guid: 4df6a0015a625df4196993ff7e60396d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4df6a0015a625df4196993ff7e60396d, type: 3}
@@ -564,6 +569,8 @@ MonoBehaviour:
         m_CallState: 2
   unavaliableStub: {fileID: 5615862218036635620}
   avaliableStub: {fileID: 2522680208807883459}
+  name: {fileID: 0}
+  description: {fileID: 0}
   requireWatch: {fileID: 4333406278392421426}
   watchesText: {fileID: 727603851067304786}
 --- !u!1 &5615862218036635620 stripped

@@ -2,44 +2,66 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/ReactiveBalanceText.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/ReactiveBalanceText.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/PurchaseEntityConverter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/PurchaseEntityConverter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/PurchaseImageRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/PurchaseImageRepository.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/repositories/IPurchaseImageRepository.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/PurchaseImage.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/PurchaseImage.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RewardedVideo/presentation/StubRewardedVideoNavigator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/RewardedVideo/presentation/StubRewardedVideoNavigator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/LevelCompletedStateRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/LevelCompletedStateRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/repositories/ILevelCompletedStateRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/repositories/ILevelCompletedStateRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/ILevelPassedStateProvider.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/ILevelPassedStateProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/UIButton_General.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIButton/UIButton_General.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/_UIViewDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Resources/Data/UIView/_UIViewDatabase.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (1).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (1).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (10).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (10).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (2).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (2).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (3).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (3).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (4).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (4).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (5).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (5).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (6).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (6).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (7).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (7).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (8).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (8).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (9).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Levels/Level (9).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsInitializer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/MasterCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/MainGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/MainGraph.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/CoinsPurchaseItem Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/CoinsPurchaseItem Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/LevelPurchaseItem Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/LevelPurchaseItem Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/PurchaseItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/PurchaseItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/RewardedPurchaseItem Variant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Purchases/RewardedPurchaseItem Variant.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/RigidbodyMovementListener.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/RigidbodyMovementListener.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/TransformScaler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gameplay/TransformScaler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/VKInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/core/YandexInterstitialAdNavigator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/data/PlayerPrefsBalanceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/data/PlayerPrefsBalanceRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/domain/DecreaseBalanceUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/domain/DecreaseBalanceUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/domain/repositories/IBalanceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/domain/repositories/IBalanceRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/ReactiveBalanceText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/ReactiveBalanceText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/SimpleBalanceText.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/presentation/ui/SimpleBalanceText.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/LevelsAssembly.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/LevelsAssembly.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI Atlas/stone-back-rect.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI Atlas/stone-back-rect.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI Atlas/stone-back-rect.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI Atlas/stone-back-rect.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI Sprite Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI Sprite Atlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/data/LevelsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/LevelsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/CompleteCurrentLevelUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/CompleteCurrentLevelUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/SetNextCurrentLevelUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/SetNextCurrentLevelUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/model/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/model/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/repositories/ILevelsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/domain/repositories/ILevelsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/_di/PurchasesBaseInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/_di/PurchasesBaseInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/_di/PurchasesPresentationInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/_di/PurchasesPresentationInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/BalanceAccessProviderAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/BalanceAccessProviderAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/LevelPassedStateProviderAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/LevelPassedStateProviderAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/RewardedVideoPresenterAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/adapters/RewardedVideoPresenterAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/CoinsPurchaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/CoinsPurchaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/RewardedVideoPurchaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/data/RewardedVideoPurchaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/CoinsPurchaseUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/CoinsPurchaseUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/IBalanceAccessProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/IBalanceAccessProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchaseAvailableUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchaseAvailableUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchasedStateUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchasedStateUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/RewardedVideoPurchaseUseCase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/RewardedVideoPurchaseUseCase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/repositories/ICoinsPurchaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/repositories/ICoinsPurchaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/repositories/IRewardedVideoPurchaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/domain/repositories/IRewardedVideoPurchaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,29 +80,110 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/PrefabLayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_CharacterPropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/SpriteEditorModule/SpriteOutlineModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/session/domain/ISessionEventLevelIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/20/e9dcc54c/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balance/presentation/CollectRewardView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/RewardedVideo/presentation/YandexRewardedVideoNavigator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_SDFShaderGUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_FontAssetEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ScaleTweener.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balance/presentation/CollectRewardView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Util/ConcreteGraphic.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/ScaleTweener.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasScalerWithChildTextObjectDoesNotCrash.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/DestroyGameObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalOrVerticalLayoutGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balance/presentation/AddBalanceHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Poki/PokiUnitySDK.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/PrefabLayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Canvas/CanvasScalerWithChildTextObjectDoesNotCrash.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SDK/Editor/SelectTemplate.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMPro_UGUI_Private.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Slider/SliderTests.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Editor/TMP_ResourcesLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/session/domain/ISessionEventLevelIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_StyleSheet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/Editor/SetGameAnalyticsBuildVersion.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.sprite@1.0.0/Editor/ShapeEditor/ShapeEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="23QLc2h0yDW4r1yqumiPqo84R54" />
   <component name="ProjectLevelVcsManager">
@@ -112,10 +215,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4640">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="4640" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -153,6 +256,7 @@
       <workItem from="1643138838163" duration="6162000" />
       <workItem from="1643185583603" duration="13970000" />
       <workItem from="1643217505829" duration="1928000" />
+      <workItem from="1643279394032" duration="15675000" />
     </task>
     <servers />
   </component>
@@ -226,7 +330,7 @@
           <properties documentPath="C:\Users\d.rebrov\yg-parcour\Assets\ExternalAssets\Mini First Person Controller\Scripts\Components\Jump.cs" initialLine="29" containingFunctionPresentation="method 'LateUpdate'" />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Balance/presentation/AddBalanceHandler.cs</url>
           <line>13</line>
           <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Balance\presentation\AddBalanceHandler.cs" initialLine="13" containingFunctionPresentation="method 'AddBalance'">
@@ -241,7 +345,7 @@
           </properties>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/CoinsPurchaseItem.cs</url>
           <line>20</line>
           <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\presentation\ui\CoinsPurchaseItem.cs" initialLine="20" containingFunctionPresentation="method 'Setup'">
@@ -254,18 +358,187 @@
           </properties>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs</url>
-          <line>71</line>
-          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\presentation\ui\DefaultPurchaseItemController.cs" initialLine="69" containingFunctionPresentation="method 'GetPurchasedState'">
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/domain/CoinsPurchaseUseCase.cs</url>
+          <line>26</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\domain\CoinsPurchaseUseCase.cs" initialLine="26" containingFunctionPresentation="lambda expression inside method 'ExecuteNewPurchase'">
             <startOffsets>
-              <option value="2625" />
+              <option value="962" />
             </startOffsets>
             <endOffsets>
-              <option value="2641" />
+              <option value="981" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs</url>
+          <line>43</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\presentation\ui\DefaultPurchaseItemController.cs" initialLine="43" containingFunctionPresentation="method 'HandleItemClick'">
+            <startOffsets>
+              <option value="1739" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1758" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs</url>
+          <line>36</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\presentation\ui\DefaultPurchaseItemController.cs" initialLine="36" containingFunctionPresentation="lambda expression inside method 'TryCoinsPurchase'">
+            <startOffsets>
+              <option value="1489" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1498" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/domain/CoinsPurchaseUseCase.cs</url>
+          <line>16</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\domain\CoinsPurchaseUseCase.cs" initialLine="16" containingFunctionPresentation="lambda expression inside method 'ExecutePurchase'">
+            <startOffsets>
+              <option value="521" />
+            </startOffsets>
+            <endOffsets>
+              <option value="617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/data/CoinsPurchaseRepository.cs</url>
+          <line>34</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\data\CoinsPurchaseRepository.cs" initialLine="34" containingFunctionPresentation="method 'GetPurchasedState'">
+            <startOffsets>
+              <option value="1109" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1162" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/data/CoinsPurchaseRepository.cs</url>
+          <line>37</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\data\CoinsPurchaseRepository.cs" initialLine="37" containingFunctionPresentation="method 'GetPurchasedState'">
+            <startOffsets>
+              <option value="1237" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1297" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchaseAvailableUseCase.cs</url>
+          <line>24</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\domain\PurchaseAvailableUseCase.cs" initialLine="24" containingFunctionPresentation="method 'GetPurchaseAvailableState'">
+            <startOffsets>
+              <option value="906" />
+            </startOffsets>
+            <endOffsets>
+              <option value="952" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchaseAvailableUseCase.cs</url>
+          <line>28</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\domain\PurchaseAvailableUseCase.cs" initialLine="28" containingFunctionPresentation="method 'GetPurchaseAvailableState'">
+            <startOffsets>
+              <option value="1063" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1118" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Purchases/domain/PurchaseAvailableUseCase.cs</url>
+          <line>29</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Purchases\domain\PurchaseAvailableUseCase.cs" initialLine="29" containingFunctionPresentation="method 'GetPurchaseAvailableState'">
+            <startOffsets>
+              <option value="1139" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1170" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Balance/domain/DecreaseBalanceUseCase.cs</url>
+          <line>13</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Balance\domain\DecreaseBalanceUseCase.cs" initialLine="13" containingFunctionPresentation="lambda expression inside method 'GetCanDecrease'">
+            <startOffsets>
+              <option value="338" />
+            </startOffsets>
+            <endOffsets>
+              <option value="354" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Balance/data/PlayerPrefsBalanceRepository.cs</url>
+          <line>15</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Balance\data\PlayerPrefsBalanceRepository.cs" initialLine="15" containingFunctionPresentation="method 'GetBalance'">
+            <startOffsets>
+              <option value="374" />
+            </startOffsets>
+            <endOffsets>
+              <option value="412" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Balance/data/PlayerPrefsBalanceRepository.cs</url>
+          <line>16</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Balance\data\PlayerPrefsBalanceRepository.cs" initialLine="16" containingFunctionPresentation="method 'GetBalance'">
+            <startOffsets>
+              <option value="425" />
+            </startOffsets>
+            <endOffsets>
+              <option value="444" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Balance/data/PlayerPrefsBalanceRepository.cs</url>
+          <line>29</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Scripts\Balance\data\PlayerPrefsBalanceRepository.cs" initialLine="28" containingFunctionPresentation="method 'Add'">
+            <startOffsets>
+              <option value="764" />
+            </startOffsets>
+            <endOffsets>
+              <option value="785" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/InternalUtil/ExceptionExtensions.cs</url>
+          <line>9</line>
+          <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Plugins\UniRx\Scripts\InternalUtil\ExceptionExtensions.cs" initialLine="9" containingFunctionPresentation="method 'Throw'">
+            <startOffsets>
+              <option value="187" />
+            </startOffsets>
+            <endOffsets>
+              <option value="269" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

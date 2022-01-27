@@ -1,5 +1,7 @@
-﻿using Purchases.domain.model;
+﻿using System;
+using Purchases.domain.model;
 using Purchases.domain.repositories;
+using UniRx;
 using Zenject;
 
 namespace Purchases.domain
@@ -11,12 +13,15 @@ namespace Purchases.domain
         [Inject] private IBalanceAccessProvider balance;
         [Inject] private ICoinsPurchaseRepository coinsPurchaseRepository;
         [Inject] private IRewardedVideoPurchaseRepository videoPurchaseRepository;
-        
-        public bool GetPurchaseAvailable(long purchaseId)
-        {
-            if (purchasedStateUseCase.GetPurchasedState(purchaseId))
-                return false;
 
+        public IObservable<bool> GetPurchaseAvailable(long purchaseId) => purchasedStateUseCase
+            .GetPurchasedState(purchaseId)
+            .SelectMany(state =>
+                state ? Observable.Return(false) : GetPurchaseAvailableState(purchaseId)
+            );
+
+        private IObservable<bool> GetPurchaseAvailableState(long purchaseId)
+        {
             var purchase = repository.GetById(purchaseId);
             switch (purchase.Type)
             {
@@ -24,13 +29,13 @@ namespace Purchases.domain
                     var cost = coinsPurchaseRepository.GetCost(purchaseId);
                     return balance.CanRemove(cost);
                 case PurchaseType.RewardedVideo:
-                    var currentWatches = videoPurchaseRepository.GetRewardedVideoCurrentWatchesCount(purchaseId);
+                    var currentWatchesFlow = videoPurchaseRepository.GetRewardedVideoCurrentWatchesCount(purchaseId);
                     var requiredWatches = videoPurchaseRepository.GetRewardedVideoWatchesCount(purchaseId);
-                    return currentWatches + 1 >= requiredWatches;
+                    return currentWatchesFlow.Select(currentWatches => currentWatches + 1 >= requiredWatches);
                 case PurchaseType.PassLevelReward:
-                    return false;
+                    return Observable.Return(false);
                 default:
-                    return false;
+                    return Observable.Return(false);
             }
         }
     }

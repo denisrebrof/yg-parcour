@@ -20,7 +20,7 @@ namespace Balance.presentation.ui
                 text = GetComponent<Text>();
         }
 
-        private void Start() => balanceRepository.GetBalanceFlow().Subscribe(UpdateBalance).AddTo(this);
+        private void Start() => balanceRepository.GetBalance().Subscribe(UpdateBalance).AddTo(this);
 
         private void UpdateBalance(int balance)
         {

@@ -360,50 +360,6 @@ Transform:
   m_Father: {fileID: 1382979411}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &366348242
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 366348243}
-  - component: {fileID: 366348244}
-  m_Layer: 0
-  m_Name: RewardedVideoPurchasePresenterAdapter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &366348243
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366348242}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1474724047}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &366348244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366348242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f3d133200dd462da545c57aa8f2eaf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &377630516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,7 +1804,6 @@ MonoBehaviour:
     type: 3}
   rewardedVideoPurchaseItemPrefab: {fileID: 5927374557383947949, guid: e9184f866c19539459b6a6f048de0280,
     type: 3}
-  adapter: {fileID: 366348244}
 --- !u!1 &1474724046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1838,6 @@ Transform:
   - {fileID: 566049975}
   - {fileID: 1039187586}
   - {fileID: 687727371}
-  - {fileID: 366348243}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -7,7 +7,7 @@ using Zenject;
 
 namespace SDK.PlayerData.data
 {
-    public class YandexPlayerIdRepository : IPlayerIdRepository
+    public class YandexPlayerIdRepository : IPlayerIdRepository 
     {
         [Inject] private YandexSDK instance;
 

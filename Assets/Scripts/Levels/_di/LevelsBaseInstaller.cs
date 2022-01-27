@@ -26,6 +26,7 @@ namespace Levels._di
             Container.Bind<ILevelsRepository>().To<LevelsRepository>().AsCached();
             Container.Bind<ILevelSceneObjectRepository>().To<LevelsRepository>().AsCached();
             Container.Bind<ICurrentLevelRepository>().To<CurrentLevelRepository>().AsSingle();
+            Container.Bind<ILevelCompletedStateRepository>().To<LevelCompletedStateRepository>().AsSingle();
             //UseCases
             Container.Bind<CompleteCurrentLevelUseCase>().ToSelf().AsSingle();
             Container.Bind<SetNextCurrentLevelUseCase>().ToSelf().AsSingle();

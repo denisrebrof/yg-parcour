@@ -3,19 +3,16 @@ using Purchases.domain;
 using RewardedVideo.domain;
 using RewardedVideo.domain.model;
 using UniRx;
-using UnityEngine;
 using Zenject;
 
 namespace Purchases.adapters
 {
-    public class RewardedVideoPresenterAdapter : MonoBehaviour, RewardedVideoPurchaseUseCase.IRewardedVideoPurchasePresenterAdapter
+    public class RewardedVideoPresenterAdapter : RewardedVideoPurchaseUseCase.IRewardedVideoPurchasePresenterAdapter
     {
         [Inject] private IRewardedVideoNavigator rewardedVideoNavigator;
 
-        public void ShowInterstitial(Action<bool> successCallback) => rewardedVideoNavigator
+        public IObservable<bool> ShowRewarded() => rewardedVideoNavigator
             .ShowRewardedVideo()
-            .Subscribe(result =>
-                successCallback.Invoke(result == ShowRewardedVideoResult.Success)
-            ).AddTo(this);
+            .Select(result => result == ShowRewardedVideoResult.Success);
     }
 }

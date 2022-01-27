@@ -22,7 +22,7 @@ namespace Ads.presentation.InterstitialAdNavigator.core
 
             return Observable
                 .Merge(interstitialShownObservable, interstitialFailedObservable)
-                .First()
+                .Take(1)
                 .DoOnSubscribe(() => instance.ShowInterstitial());
 #endif
             return Observable.Return(ShowInterstitialResult.Success);

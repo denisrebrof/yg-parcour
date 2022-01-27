@@ -1,8 +1,10 @@
-﻿namespace Purchases.domain
+﻿using System;
+
+namespace Purchases.domain
 {
     public interface IBalanceAccessProvider
     {
-        bool CanRemove(int value);
-        void Remove(int value);
+        IObservable<bool> CanRemove(int value);
+        IObservable<bool> Remove(int value);
     }
 }

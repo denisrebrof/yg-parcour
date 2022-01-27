@@ -3,29 +3,44 @@ using Purchases.domain;
 using Purchases.domain.model;
 using Purchases.domain.repositories;
 using UniRx;
+using UnityEngine;
 using Zenject;
-using static Purchases.domain.RewardedVideoPurchaseUseCase.ShowRewardedVideoResult;
 
 namespace Purchases.presentation.ui
 {
-    public class DefaultPurchaseItemController : PurchaseItem.IPurchaseItemController
+    public class DefaultPurchaseItemController : MonoBehaviour, PurchaseItem.IPurchaseItemController
     {
         [Inject] private PurchasedStateUseCase purchasedStateUseCase;
         [Inject] private CoinsPurchaseUseCase coinsPurchaseUseCase;
         [Inject] private PurchaseAvailableUseCase purchaseAvailableUseCase;
         [Inject] private RewardedVideoPurchaseUseCase rewardedVideoPurchaseUseCase;
+        [Inject] private IPurchaseRepository purchaseRepository;
 
         [Inject] private IPurchaseItemSelectionAdapter selectionAdapter;
 
-        [Inject] private IPurchaseRepository purchaseRepository;
+        public void OnItemClick(long purchaseId) => purchasedStateUseCase
+            .GetPurchasedState(purchaseId)
+            .Subscribe(purchasedState =>
+                HandleItemClick(purchasedState, purchaseId)
+            ).AddTo(this);
 
-        private ReactiveProperty<bool> purchasedStateFlow = new();
+        public IObservable<bool> GetPurchasedState(long purchaseId) => purchasedStateUseCase
+            .GetPurchasedState(purchaseId);
 
-        private bool initialized = false;
+        private void TryRewardedVideoPurchase(long purchaseId) => rewardedVideoPurchaseUseCase
+            .LaunchRewardedVideo(purchaseId)
+            .Subscribe() //Ignore result
+            .AddTo(this);
 
-        public void OnItemClick(long purchaseId)
+        private void TryCoinsPurchase(long purchaseId) => purchaseAvailableUseCase
+            .GetPurchaseAvailable(purchaseId)
+            .Where(available => available)
+            .SelectMany(coinsPurchaseUseCase.ExecutePurchase(purchaseId))
+            .Subscribe() //Ignore result
+            .AddTo(this);
+
+        private void HandleItemClick(bool purchasedState, long purchaseId)
         {
-            var purchasedState = purchasedStateUseCase.GetPurchasedState(purchaseId);
             if (purchasedState)
             {
                 //Handle Item Selection
@@ -47,40 +62,8 @@ namespace Purchases.presentation.ui
                 default:
                     throw new ArgumentOutOfRangeException();
             }
-
-            coinsPurchaseUseCase.ExecutePurchase(purchaseId);
         }
 
-        private void TryRewardedVideoPurchase(long purchaseId)
-        {
-            rewardedVideoPurchaseUseCase.LaunchRewardedVideo(purchaseId,
-                delegate(RewardedVideoPurchaseUseCase.ShowRewardedVideoResult result)
-                {
-                    purchasedStateFlow.Value = result == Purchased;
-                });
-        }
-
-        private void TryCoinsPurchase(long purchaseId)
-        {
-            if (!purchaseAvailableUseCase.GetPurchaseAvailable(purchaseId)) return;
-            var purchaseResult = coinsPurchaseUseCase.ExecutePurchase(purchaseId);
-            purchasedStateFlow.Value = purchaseResult == CoinsPurchaseUseCase.CoinsPurchaseResult.Success;
-        }
-
-        public IObservable<bool> GetPurchasedState(long purchaseId)
-        {
-            if (initialized) return purchasedStateFlow;
-            AddPurchasedStateProperty(purchaseId);
-            initialized = true;
-            return purchasedStateFlow;
-        }
-
-        private void AddPurchasedStateProperty(long purchaseId)
-        {
-            var initialState = purchasedStateUseCase.GetPurchasedState(purchaseId);
-            purchasedStateFlow.Value = initialState;
-        }
-        
         public interface IPurchaseItemSelectionAdapter
         {
             public void SelectItem(long purchaseId);

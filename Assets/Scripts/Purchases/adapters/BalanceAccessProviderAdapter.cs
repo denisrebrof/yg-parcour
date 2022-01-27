@@ -1,5 +1,7 @@
-﻿using Balance.domain;
+﻿using System;
+using Balance.domain;
 using Purchases.domain;
+using UniRx;
 using Zenject;
 
 namespace Purchases.adapters
@@ -8,8 +10,8 @@ namespace Purchases.adapters
     {
         [Inject] private DecreaseBalanceUseCase decreaseBalanceUseCase;
 
-        public bool CanRemove(int value) => decreaseBalanceUseCase.GetCanDecrease(value);
+        public IObservable<bool> CanRemove(int value) => decreaseBalanceUseCase.GetCanDecrease(value);
 
-        public void Remove(int value) => decreaseBalanceUseCase.Decrease(value);
+        public IObservable<bool> Remove(int value) => decreaseBalanceUseCase.Decrease(value).Select(result => result == DecreaseBalanceUseCase.DecreaseBalanceResult.Success) ;
     }
 }

@@ -40,7 +40,7 @@ namespace Purchases._di
                 .To<BalanceAccessProviderAdapter>()
                 .AsSingle();
             Container
-                .Bind<PurchasedStateUseCase.ILevelPassedStateProvider>()
+                .Bind<ILevelPassedStateProvider>()
                 .To<LevelPassedStateProviderAdapter>()
                 .AsSingle();
             Container

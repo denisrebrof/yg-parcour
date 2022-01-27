@@ -4,8 +4,7 @@ namespace Balance.domain.repositories
 {
     public interface IBalanceRepository
     {
-        int GetBalance();
-        IObservable<int> GetBalanceFlow();
+        IObservable<int> GetBalance();
         void Add(int value);
         void Remove(int value);
     }

@@ -1,5 +1,4 @@
-﻿using Levels.presentation.ui;
-using Purchases.adapters;
+﻿using Purchases.adapters;
 using Purchases.domain;
 using Purchases.presentation.ui;
 using UnityEngine;
@@ -12,13 +11,15 @@ namespace Purchases._di
         [SerializeField] private CoinsPurchaseItem coinsPurchaseItemPrefab;
         [SerializeField] private PassLevelRewardPurchaseItem passLevelRewardItemPrefab;
         [SerializeField] private RewardedVideoPurchaseItem rewardedVideoPurchaseItemPrefab;
-        [SerializeField] private RewardedVideoPresenterAdapter adapter;
 
         public override void InstallBindings()
         {
             //Presentation
             //UI
-            Container.Bind<PurchaseItem.IPurchaseItemController>().To<DefaultPurchaseItemController>().FromNew().AsTransient();
+            Container
+                .Bind<PurchaseItem.IPurchaseItemController>()
+                .To<DefaultPurchaseItemController>()
+                .FromNewComponentOnNewGameObject().AsTransient();
             //Item Factories
             Container.BindFactory<CoinsPurchaseItem, CoinsPurchaseItem.Factory>()
                 .FromComponentInNewPrefab(coinsPurchaseItemPrefab);
@@ -27,11 +28,10 @@ namespace Purchases._di
             Container.BindFactory<RewardedVideoPurchaseItem, RewardedVideoPurchaseItem.Factory>()
                 .FromComponentInNewPrefab(rewardedVideoPurchaseItemPrefab);
             Container.Bind<IPurchaseItemFactory>().To<DefaultPurchaseItemFactory>().AsSingle();
-            
+
             Container
                 .Bind<RewardedVideoPurchaseUseCase.IRewardedVideoPurchasePresenterAdapter>()
                 .To<RewardedVideoPresenterAdapter>()
-                .FromInstance(adapter)
                 .AsSingle();
         }
     }

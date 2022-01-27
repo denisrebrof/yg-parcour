@@ -7,31 +7,39 @@ namespace Balance.data
 {
     public class PlayerPrefsBalanceRepository : IBalanceRepository
     {
-        private const string PrefsKeyPrefix = "Balance";
+        private const string PREFS_KEY_PREFIX = "Balance";
 
-        private readonly IntReactiveProperty balanceFlow = new IntReactiveProperty();
+        private readonly IntReactiveProperty balanceFlow = new();
 
-        public int GetBalance() => PlayerPrefs.GetInt(PrefsKeyPrefix, 0);
-
-        public IObservable<int> GetBalanceFlow()
+        public IObservable<int> GetBalance()
         {
-            balanceFlow.Value = GetBalance();
+            balanceFlow.Value = GetBalanceValue();
             return balanceFlow;
         }
 
         public void Add(int value)
         {
-            var balance = GetBalance() + value;
-            PlayerPrefs.SetInt(PrefsKeyPrefix, balance);
-            balanceFlow.Value = balance;
+            var balance = GetBalanceValue() + value;
+            PlayerPrefs.SetInt(PREFS_KEY_PREFIX, balance);
+            try
+            {
+                balanceFlow.Value = balance;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
         public void Remove(int value)
         {
-            var removeResult = GetBalance() - value;
+            var removeResult = GetBalanceValue() - value;
             var balance = Mathf.Max(0, removeResult);
-            PlayerPrefs.SetInt(PrefsKeyPrefix, balance);
+            PlayerPrefs.SetInt(PREFS_KEY_PREFIX, balance);
             balanceFlow.Value = balance;
         }
+
+        private static int GetBalanceValue() => PlayerPrefs.GetInt(PREFS_KEY_PREFIX, 0);
     }
 }
