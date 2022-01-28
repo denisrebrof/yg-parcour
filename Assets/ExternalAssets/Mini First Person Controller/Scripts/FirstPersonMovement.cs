@@ -8,6 +8,7 @@ public class FirstPersonMovement : MonoBehaviour
     [Inject] private IMovementInputProvider inputProvider;
 
     public float speed = 5;
+    public float speedMultiplier = 1;
 
     [Header("Running")] public bool canRun = true;
     public bool IsRunning { get; private set; }
@@ -31,6 +32,7 @@ public class FirstPersonMovement : MonoBehaviour
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
+        targetMovingSpeed *= speedMultiplier;
         if (speedOverrides.Count > 0)
         {
             targetMovingSpeed = speedOverrides[speedOverrides.Count - 1]();
@@ -45,6 +47,8 @@ public class FirstPersonMovement : MonoBehaviour
         m_rigidbody.velocity =
             transform.rotation * new Vector3(targetVelocity.x, m_rigidbody.velocity.y, targetVelocity.y);
     }
+
+    public void SetSpeedMul(float mul) => speedMultiplier = mul;
 
     public interface IMovementInputProvider
     {

@@ -34,6 +34,7 @@ namespace Purchases.presentation.ui
 
         private void TryCoinsPurchase(long purchaseId) => purchaseAvailableUseCase
             .GetPurchaseAvailable(purchaseId)
+            .Take(1)
             .Where(available => available)
             .SelectMany(coinsPurchaseUseCase.ExecutePurchase(purchaseId))
             .Subscribe() //Ignore result

@@ -9,6 +9,9 @@ public class Jump : MonoBehaviour
     public float jumpStrength = 2;
     public event Action Jumped;
 
+    private int extraJumpsLimit = 0;
+    private int extraJumps = 0;
+
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
 
@@ -23,15 +26,27 @@ public class Jump : MonoBehaviour
     {
         // Get rigidbody.
         myRigidbody = GetComponent<Rigidbody>();
+        extraJumps = extraJumpsLimit;
     }
 
     void LateUpdate()
     {
         var hasInput = jumpInputProvider.GetHasJumpInput();
         var grounded = !groundCheck || groundCheck.isGrounded;
-        if (!hasInput || !grounded) return;
+        if (!hasInput) return;
+        if (grounded)
+            extraJumps = extraJumpsLimit;
+        else if (extraJumps-- <= 0) 
+            return;
+
         myRigidbody.AddForce(Vector3.up * 100 * jumpStrength);
         Jumped?.Invoke();
+    }
+
+    public void SetExtraJumpsCount(int count)
+    {
+        extraJumps = Math.Min(extraJumps, count);
+        extraJumpsLimit = count;
     }
 
     public interface IJumpInputProvider
