@@ -22,7 +22,7 @@ namespace Purchases.domain
             var cost = coinsPurchaseRepository.GetCost(purchaseId);
             return balanceAccessProvider
                 .CanRemove(cost)
-                .Take(1)  
+                .Take(1)
                 .SelectMany(enoughBalance =>
                     {
                         if (!enoughBalance) return Observable.Return(CoinsPurchaseResult.Failure);

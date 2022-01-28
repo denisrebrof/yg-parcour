@@ -3,6 +3,7 @@ using System;
 using Plugins.YSDK;
 using SDK.PlayerData.domain;
 using UniRx;
+using UnityEngine;
 using Zenject;
 
 namespace SDK.PlayerData.data
@@ -13,10 +14,14 @@ namespace SDK.PlayerData.data
 
         public bool GetPlayerIdAvailable() => true;
 
-        public IObservable<string> GetPlayerId() => Observable.FromEvent<string>(
-            handler => instance.onPlayerIdReceived += handler,
-            handler => instance.onPlayerIdReceived -= handler
-        );
+        public IObservable<string> GetPlayerId()
+        {
+            Debug.Log("Get Pid in YPIR");
+            return Observable.FromEvent<string>(
+                handler => instance.onPlayerIdReceived += handler,
+                handler => instance.onPlayerIdReceived -= handler
+            );
+        }
     }
 }
 #endif

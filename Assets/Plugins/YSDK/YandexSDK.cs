@@ -88,7 +88,6 @@ namespace Plugins.YSDK
         return GetLang();
     }
     
-    
     public void RequestPlayerIndentifier()
     {
         RequestPlayerId();
@@ -168,6 +167,7 @@ namespace Plugins.YSDK
     /// </summary>
     /// /// <param name="playerId"></param>
     public void OnHandlePlayerId(string playerId) {
+        Debug.Log("Handle PId in YandexSDK");
         if(onPlayerIdReceived!=null) onPlayerIdReceived.Invoke(playerId);
     }
 
