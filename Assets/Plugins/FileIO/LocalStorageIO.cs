@@ -10,8 +10,6 @@ namespace Plugins.FileIO
     {
         public static void DeleteKey(string key)
         {
-            Debug.Log($"LocalStorageIO.DeleteKey(key: {key})");
-
 #if UNITY_WEBGL && !UNITY_EDITOR
             RemoveFromLocalStorage(key: key);
 #else
@@ -21,8 +19,6 @@ namespace Plugins.FileIO
 
         public static bool HasKey(string key)
         {
-            Debug.Log($"LocalStorageIO.HasKey(key: {key})");
-
 #if UNITY_WEBGL && !UNITY_EDITOR
             return (HasKeyInLocalStorage(key) == 1);
 #else
@@ -32,8 +28,6 @@ namespace Plugins.FileIO
 
         public static string GetString(string key)
         {
-            Debug.Log($"LocalStorageIO.GetString(key: {key})");
-
 #if UNITY_WEBGL && !UNITY_EDITOR
             return LoadFromLocalStorage(key: key);
 #else
@@ -43,8 +37,6 @@ namespace Plugins.FileIO
 
         public static void SetString(string key, string value)
         {
-            Debug.Log($"LocalStorageIO.SetString(key: {key}, value: {value})");
-
 #if UNITY_WEBGL && !UNITY_EDITOR
             SaveToLocalStorage(key: key, value: value);
 #else
@@ -67,8 +59,6 @@ namespace Plugins.FileIO
 
         public static void Save()
         {
-            Debug.Log("LocalStorageIO.Save()");
-
 #if !UNITY_WEBGL
             PlayerPrefs.Save();
 #endif
