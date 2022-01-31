@@ -9,7 +9,7 @@ namespace Localization.LanguageProviders
         
         public Language GetCurrentLanguage()
         {
-#if YANDEX_SDK
+#if YANDEX_SDK && !UNITY_EDITOR
             var lang = sdk.GetLanguage();
             return lang switch
             {

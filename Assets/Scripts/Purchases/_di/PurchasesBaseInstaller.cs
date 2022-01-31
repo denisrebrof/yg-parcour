@@ -13,14 +13,12 @@ namespace Purchases._di
     public class PurchasesBaseInstaller : ScriptableObjectInstaller
     {
         [SerializeField] private SimplePurchaseEntitiesDao purchaseEntitiesDao;
+
         public override void InstallBindings()
         {
             //Daos
-            Container.Bind<ISavedPurchasedStateDao>().To<PlayerPrefsPurchasedStateDao>().AsSingle();
-            Container
-                .Bind<RewardedVideoPurchaseRepository.IRewardedVideoWatchDao>()
-                .To<PlayerPrefsRewardedVideoWatchesDao>()
-                .AsSingle();
+            BindPurchasedStateDao();
+            BindRewardedVideoWatchDao();
             Container.Bind<IPurchaseEntitiesDao>().FromInstance(purchaseEntitiesDao).AsSingle();
             Container.Bind<PurchaseEntityConverter>().ToSelf().AsSingle();
             //Repositories
@@ -50,6 +48,30 @@ namespace Purchases._di
             Container
                 .Bind<DefaultPurchaseItemController.IPurchaseItemSelectionAdapter>()
                 .To<PurchaseItemSelectionAdapter>()
+                .AsSingle();
+        }
+
+        private void BindRewardedVideoWatchDao()
+        {
+            Container
+                .Bind<RewardedVideoPurchaseRepository.IRewardedVideoWatchDao>()
+#if PLAYER_PREFS_STORAGE
+                .To<PlayerPrefsRewardedVideoWatchesDao>()
+#else
+                .To<LocalStorageRewardedVideoWatchesDao>()
+#endif
+                .AsSingle();
+        }
+
+        private void BindPurchasedStateDao()
+        {
+            Container
+                .Bind<ISavedPurchasedStateDao>()
+#if PLAYER_PREFS_STORAGE
+                .To<PlayerPrefsPurchasedStateDao>()
+#else
+                .To<LocalStoragePurchasedStateDao>()
+#endif
                 .AsSingle();
         }
     }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Sound.data
 {
-    public class SoundPrefsPlayerPrefsRepository: ISoundPrefsRepository
+    public class PlayerPrefsSoundPrefsRepository: ISoundPrefsRepository
     {
         private string prefsKey = "soundEnabledState";
         

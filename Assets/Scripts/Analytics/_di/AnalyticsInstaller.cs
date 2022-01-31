@@ -11,15 +11,7 @@ namespace Analytics._di
     [CreateAssetMenu(menuName = "Installers/AnalyticsInstaller")]
     public class AnalyticsInstaller : ScriptableObjectInstaller
     {
-#if GAME_ANALYTICS
-        [SerializeField] private GameAnalytics gameAnalyticsPrefab;
-#endif
-
-        public override void InstallBindings()
-        {
-            SpawnAnalytics();
-            BindAnalyticsAdapter();
-        }
+        public override void InstallBindings() => BindAnalyticsAdapter();
 
         private void BindAnalyticsAdapter()
         {
@@ -36,15 +28,13 @@ namespace Analytics._di
 
             Container
                 .Bind<IFirstOpenEventSentRepository>()
+                
+#if PLAYER_PREFS_STORAGE
                 .To<PlayerPrefsFirstOpenEventSentRepository>()
-                .AsSingle();
-        }
-
-        private void SpawnAnalytics()
-        {
-#if GAME_ANALYTICS
-            Instantiate(gameAnalyticsPrefab, GameObject.Find("Analytics").transform);
+#else
+                .To<LocalStorageFirstOpenEventSentRepository>()
 #endif
+                .AsSingle();
         }
     }
 }
