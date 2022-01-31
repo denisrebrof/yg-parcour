@@ -1,5 +1,7 @@
 ﻿using System;
+using Doozy.Engine;
 using UnityEngine;
+using UnityEngine.Events;
 using Zenject;
 
 public class Jump : MonoBehaviour
@@ -8,6 +10,7 @@ public class Jump : MonoBehaviour
     Rigidbody myRigidbody;
     public float jumpStrength = 2;
     public event Action Jumped;
+    public string JumpedMessage = "Jump";
 
     private int extraJumpsLimit = 0;
     private int extraJumps = 0;
@@ -41,6 +44,7 @@ public class Jump : MonoBehaviour
 
         myRigidbody.AddForce(Vector3.up * 100 * jumpStrength);
         Jumped?.Invoke();
+        GameEventMessage.Send(JumpedMessage);
     }
 
     public void SetExtraJumpsCount(int count)

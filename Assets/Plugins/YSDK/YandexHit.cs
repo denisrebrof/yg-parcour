@@ -1,16 +1,11 @@
 using UnityEngine;
 using Zenject;
 
-public class YandexHit : MonoBehaviour
+namespace Plugins.YSDK
 {
-    #if YANDEX_SDK
-    [Inject] private YandexSDK instance;
-    #endif
-    
-    public void Hit(string eventName)
+    public class YandexHit : MonoBehaviour
     {
-#if YANDEX_SDK
-        if (instance is not null) instance.AddHit(eventName);
-#endif
+        [Inject] private YandexSDK instance;
+        public void Hit(string eventName) => instance.AddHit(eventName);
     }
 }

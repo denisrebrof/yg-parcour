@@ -20,7 +20,7 @@ namespace SDK.PlayerData.data
             return Observable.FromEvent<string>(
                 handler => instance.onPlayerIdReceived += handler,
                 handler => instance.onPlayerIdReceived -= handler
-            );
+            ).DoOnSubscribe(() => instance.RequestPlayerIndentifier());
         }
     }
 }

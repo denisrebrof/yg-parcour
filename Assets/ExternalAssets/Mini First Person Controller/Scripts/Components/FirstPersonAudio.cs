@@ -1,31 +1,31 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class FirstPersonAudio : MonoBehaviour
 {
     public FirstPersonMovement character;
     public GroundCheck groundCheck;
 
-    [Header("Step")]
-    public AudioSource stepAudio;
+    [Header("Step")] public AudioSource stepAudio;
     public AudioSource runningAudio;
+
     [Tooltip("Minimum velocity for moving audio to play")]
     /// <summary> "Minimum velocity for moving audio to play" </summary>
     public float velocityThreshold = .01f;
+
     Vector2 lastCharacterPosition;
     Vector2 CurrentCharacterPosition => new Vector2(character.transform.position.x, character.transform.position.z);
 
-    [Header("Landing")]
-    public AudioSource landingAudio;
+    [Header("Landing")] public AudioSource landingAudio;
     public AudioClip[] landingSFX;
 
-    [Header("Jump")]
-    public Jump jump;
+    [Header("Jump")] public Jump jump;
     public AudioSource jumpAudio;
     public AudioClip[] jumpSFX;
 
-    [Header("Crouch")]
-    public Crouch crouch;
+    [Header("Crouch")] public Crouch crouch;
     public AudioSource crouchStartAudio, crouchedAudio, crouchEndAudio;
     public AudioClip[] crouchStartSFX, crouchEndSFX;
 
@@ -111,13 +111,16 @@ public class FirstPersonAudio : MonoBehaviour
     }
 
     #region Play instant-related audios.
+
     void PlayLandingAudio() => PlayRandomClip(landingAudio, landingSFX);
     void PlayJumpAudio() => PlayRandomClip(jumpAudio, jumpSFX);
     void PlayCrouchStartAudio() => PlayRandomClip(crouchStartAudio, crouchStartSFX);
     void PlayCrouchEndAudio() => PlayRandomClip(crouchEndAudio, crouchEndSFX);
+
     #endregion
 
     #region Subscribe/unsubscribe to events.
+
     void SubscribeToEvents()
     {
         // PlayLandingAudio when Grounded.
@@ -126,7 +129,7 @@ public class FirstPersonAudio : MonoBehaviour
         // PlayJumpAudio when Jumped.
         if (jump)
         {
-            jump.Jumped.AddListener(PlayJumpAudio);
+            jump.Jumped += PlayJumpAudio;
         }
 
         // Play crouch audio on crouch start/end.
@@ -145,7 +148,7 @@ public class FirstPersonAudio : MonoBehaviour
         // Undo PlayJumpAudio when Jumped.
         if (jump)
         {
-            jump.Jumped.RemoveListener(PlayJumpAudio);
+            jump.Jumped -= PlayJumpAudio;
         }
 
         // Undo play crouch audio on crouch start/end.
@@ -155,9 +158,11 @@ public class FirstPersonAudio : MonoBehaviour
             crouch.CrouchEnd -= PlayCrouchEndAudio;
         }
     }
+
     #endregion
 
     #region Utility.
+
     /// <summary>
     /// Get an existing AudioSource from a name or create one if it was not found.
     /// </summary>
@@ -166,7 +171,7 @@ public class FirstPersonAudio : MonoBehaviour
     AudioSource GetOrCreateAudioSource(string name)
     {
         // Try to get the audiosource.
-        AudioSource result = System.Array.Find(GetComponentsInChildren<AudioSource>(), a => a.name == name);
+        AudioSource result = Array.Find(GetComponentsInChildren<AudioSource>(), a => a.name == name);
         if (result)
             return result;
 
@@ -193,5 +198,6 @@ public class FirstPersonAudio : MonoBehaviour
         audio.clip = clip;
         audio.Play();
     }
-    #endregion 
+
+    #endregion
 }
