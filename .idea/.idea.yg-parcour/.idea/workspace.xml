@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FileIO/LocalStorageIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FileIO/LocalStorageIO.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1643356773876" duration="6079000" />
       <workItem from="1643392950168" duration="877000" />
       <workItem from="1643481139282" duration="3868000" />
-      <workItem from="1643626904772" duration="1547000" />
+      <workItem from="1643626904772" duration="1863000" />
     </task>
     <servers />
   </component>
@@ -179,7 +179,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Plugins/FileIO/LocalStorageIO.cs</url>
-          <line>81</line>
+          <line>85</line>
           <properties documentPath="D:\Projects\Unity\yg-parcour\Assets\Plugins\FileIO\LocalStorageIO.cs" initialLine="81" isMultiMethodBreakpoint="true">
             <option name="multiMethodBreakpoint" value="true" />
             <startOffsets>

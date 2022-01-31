@@ -1,4 +1,7 @@
 using System;
+#if UNITY_WEBGL && !UNITY_EDITOR
+using System.Runtime.InteropServices;
+#endif
 using UnityEngine;
 
 namespace Plugins.FileIO
@@ -71,6 +74,7 @@ namespace Plugins.FileIO
 #endif
         }
 
+        
 #if UNITY_WEBGL && !UNITY_EDITOR
         [DllImport("__Internal")]
         private static extern void SaveToLocalStorage(string key, string value);
