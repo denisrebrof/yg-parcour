@@ -491,7 +491,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8828995837655049217}
         m_TargetAssemblyTypeName: PokiHappyTime, Assembly-CSharp
-        m_MethodName: HappyTime
+        m_MethodName: SetHappyTime
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

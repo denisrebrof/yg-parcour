@@ -22,7 +22,7 @@ namespace Levels._di
             Container.Bind<LevelLoadingController>().FromInstance(levelLoadingController).AsSingle();
             //UI
             Container.Bind<LevelItem.ILevelItemController>().To<DefaultLevelItemController>().AsSingle();
-            Container.Decorate<LevelItem.ILevelItemController>().With<LevelItemControllerStatDecorator>();
+            Container.Decorate<LevelItem.ILevelItemController>().With<LevelItemControllerAnalyticsDecorator>();
             Container.BindFactory<LevelItem, LevelItem.Factory>().FromComponentInNewPrefab(levelItemPrefab);
         }
     }

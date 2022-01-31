@@ -2,29 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialNavigatorHitsDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialNavigatorHitsDecorator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/dao/PlayerPrefsWrapperCurrentLevelIdDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/dao/PlayerPrefsWrapperCurrentLevelIdDao.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/dao/PlayerPrefsWrapperLevelCompletedStateDao.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/data/dao/PlayerPrefsWrapperLevelCompletedStateDao.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsWrapperRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsWrapperRepository.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/data/LocalStorageBalanceRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/data/LocalStorageBalanceRepository.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/FirstPersonAudio.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/FirstPersonAudio.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexSDK.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AssetPostprocessor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_AutoRun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_ContinuationManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_EditorUtilities.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_Menu.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_PostprocessBuild.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SettingsInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_SignUp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GA_UpdateWindow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/GameAnalyticsInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Editor/Playmaker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/GameAnalyticsInitializer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameAnalytics/Plugins.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialAdNavigator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialAdNavigator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/_di/AdsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/_di/LevelsBaseInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/_di/SoundInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/_di/SoundInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Sound/data/SoundPrefsPlayerPrefsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Balance/Balance.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Balance/Balance.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Localization/LanguageProviders/YandexLangualgeProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +53,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640340061366</updated>
-      <workItem from="1642413962714" duration="5466000" />
+      <workItem from="1642669296477" duration="1549000" />
+      <workItem from="1643045391008" duration="315000" />
+      <workItem from="1643116488090" duration="1231000" />
+      <workItem from="1643483440683" duration="1076000" />
     </task>
     <servers />
   </component>

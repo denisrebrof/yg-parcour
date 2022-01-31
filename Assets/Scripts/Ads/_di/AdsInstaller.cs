@@ -1,5 +1,6 @@
 using Ads.InterstitialAdNavigator;
-using Analytics;
+using Ads.presentation.InterstitialAdNavigator.core;
+using Ads.presentation.InterstitialAdNavigator.decorators;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Zenject;
@@ -10,8 +11,12 @@ namespace Ads._di
     {
         [SerializeField] private InterstitialAdNavigatorCounterDecorator dieCounterNavigator;
         [SerializeField] private InterstitialAdNavigatorCounterDecorator levelLoadedCounterNavigator;
-        [FormerlySerializedAs("lockLookInterstitialAdNavigatorDecorator")] [SerializeField] private InterstitialAdNavigatorLockLookDecorator interstitialAdNavigatorLockLookDecorator;
+
+        [FormerlySerializedAs("lockLookInterstitialAdNavigatorDecorator")] [SerializeField]
+        private InterstitialAdNavigatorLockLookDecorator interstitialAdNavigatorLockLookDecorator;
+
         [SerializeField] private InterstitialAdNavigatorMuteAudioDecorator muteAudioInterstitialAdNavigatorDecorator;
+
         public override void InstallBindings()
         {
             Container
@@ -28,26 +33,28 @@ namespace Ads._di
                 .To<VKInterstitialAdNavigator>()
 #elif POKI_SDK
                 .To<PokiInterstitialAdNavigator>()
+#elif CRAZY_SDK
+                .To<CrazyInterstitialAdNavigator>()
 #else
                 .To<DebugLogInterstitialAdNavigator>()
 #endif
                 .AsSingle()
                 .WhenInjectedInto<InterstitialAdNavigatorAnalyticsDecorator>();
-            
+
             Container
                 .Bind<IInterstitalAdNavigator>()
                 .To<InterstitialAdNavigatorAnalyticsDecorator>()
                 .FromNew()
                 .AsSingle()
                 .WhenInjectedInto<InterstitialAdNavigatorLockLookDecorator>();
-            
+
             Container
                 .Bind<IInterstitalAdNavigator>()
                 .To<InterstitialAdNavigatorLockLookDecorator>()
                 .FromInstance(interstitialAdNavigatorLockLookDecorator)
                 .AsSingle()
                 .WhenInjectedInto<InterstitialAdNavigatorMuteAudioDecorator>();
-            
+
             Container
                 .Bind<IInterstitalAdNavigator>()
                 .To<InterstitialAdNavigatorMuteAudioDecorator>()
