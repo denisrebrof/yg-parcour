@@ -50,6 +50,8 @@ mergeInto(LibraryManager.library, {
   },
 
   RequestPlayerId: function() {
+    console.log('request player id in jslib 1');
     requestPlayerId();
+    console.log('requested player id in jslib 2');
   }
 });
