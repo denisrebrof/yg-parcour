@@ -1,12 +1,11 @@
 ﻿using Analytics.ads;
 using Analytics.levels;
 using Analytics.screens;
-using Analytics.session;
 using Analytics.session.domain;
 using Analytics.settings;
 using UnityEngine;
 
-namespace Analytics
+namespace Analytics.adapter
 {
     public class DebugLogAnalyticsAdapter : AnalyticsAdapter
     {
@@ -52,9 +51,24 @@ namespace Analytics
             Log("Set player id: " + id);
         }
 
+        public override void InitializeWithoutPlayerId()
+        {
+            Log("Initialize Analytics Without PlayerId");
+        }
+
         public override void SendFirstOpenEvent()
         {
             Log("First Open");
+        }
+
+        public override void SendPurchasedEvent(long purchaseId)
+        {
+            Debug.Log("SendPurchasedEvent");
+        }
+
+        public override void SendBalanceAddedEvent(int amount)
+        {
+            Debug.Log("SendBalanceAddedEvent");
         }
 
         private void Log(string text)

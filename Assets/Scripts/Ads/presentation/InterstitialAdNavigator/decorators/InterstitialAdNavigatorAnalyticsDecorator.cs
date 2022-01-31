@@ -1,5 +1,6 @@
 using System;
 using Analytics;
+using Analytics.adapter;
 using Analytics.ads;
 using Analytics.ads.placement;
 using UniRx;

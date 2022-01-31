@@ -1,4 +1,5 @@
 using Analytics;
+using Analytics.adapter;
 using Analytics.screens;
 using Doozy.Engine.UI;
 using UnityEngine;

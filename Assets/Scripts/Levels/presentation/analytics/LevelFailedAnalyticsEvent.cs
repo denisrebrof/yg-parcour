@@ -1,4 +1,5 @@
 ﻿using Analytics;
+using Analytics.adapter;
 using Analytics.levels;
 using Levels.domain.repositories;
 using UnityEngine;

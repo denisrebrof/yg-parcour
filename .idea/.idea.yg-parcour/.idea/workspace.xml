@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FileIO/LocalStorageIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FileIO/LocalStorageIO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Analytics/GameAnalytics.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Analytics/GameAnalytics.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SDK/YandexSDK.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SDK/YandexSDK.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorAnalyticsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorAnalyticsDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/FirstLaunchEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/FirstLaunchEventHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/SessionEventsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/SessionEventsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/settings/SettingsToggleAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/settings/SettingsToggleAnalyticsEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelCompletedAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelCompletedAnalyticsEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelFailedAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelFailedAnalyticsEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItemControllerAnalyticsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItemControllerAnalyticsDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/Purchases.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/Purchases.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +55,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/MovingZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Social/SocialBlock.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Editor/UI/ButtonEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity/yg-parcour/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpecializedCollections/IndexedSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utils/Rotator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity/yg-parcour/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/20/e9dcc54c/Enumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Balance/presentation/CollectRewardView.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,7 +75,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialNavigatorHitsDecorator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Analytics/session/domain/ISessionEventLevelIdProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_StyleSheet.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/Unity/yg-parcour/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Graphic/ImageTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Tests/Runtime/Graphic/GraphicTests.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound/data/PlayerPrefsSoundPrefsRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -143,7 +168,8 @@
       <workItem from="1643356773876" duration="6079000" />
       <workItem from="1643392950168" duration="877000" />
       <workItem from="1643481139282" duration="3868000" />
-      <workItem from="1643626904772" duration="4473000" />
+      <workItem from="1643626904772" duration="9950000" />
+      <workItem from="1643652955180" duration="306000" />
     </task>
     <servers />
   </component>

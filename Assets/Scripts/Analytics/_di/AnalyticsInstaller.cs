@@ -1,4 +1,5 @@
-﻿using Analytics.session.data;
+﻿using Analytics.adapter;
+using Analytics.session.data;
 using Analytics.session.domain;
 using UnityEngine;
 using Zenject;
@@ -28,7 +29,6 @@ namespace Analytics._di
 
             Container
                 .Bind<IFirstOpenEventSentRepository>()
-                
 #if PLAYER_PREFS_STORAGE
                 .To<PlayerPrefsFirstOpenEventSentRepository>()
 #else

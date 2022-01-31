@@ -1,21 +1,22 @@
 ﻿#if GAME_ANALYTICS
-using System;
 using System.Collections.Generic;
 using Analytics.ads;
 using Analytics.levels;
 using Analytics.screens;
-using Analytics.session;
 using Analytics.session.domain;
 using Analytics.settings;
 using GameAnalyticsSDK;
+using UnityEngine;
 
-namespace Analytics
+namespace Analytics.adapter
 {
-    public class GameAnalyticsAdapter: AnalyticsAdapter
+    public class GameAnalyticsAdapter : AnalyticsAdapter
     {
         private static string defaultPostfix = "Undefined";
+
         public override void SendAdEvent(AdAction action, AdType type, AdProvider provider, IAdPlacement placement)
         {
+            Debug.Log(" SendAdEvent: " + action + ' ' + type);
             var gAAction = action switch
             {
                 AdAction.Request => GAAdAction.Request,
@@ -34,6 +35,7 @@ namespace Analytics
 
         public override void SendSettingsEvent(SettingType type, string val)
         {
+            Debug.Log("SendSettingsEvent: " + type + ' ' + val);
             var eventName = "Setting_" + type switch
             {
                 SettingType.SoundToggle => "Sound",
@@ -45,6 +47,7 @@ namespace Analytics
 
         public override void SendScreenEvent(string screenName, ScreenAction action)
         {
+            Debug.Log("SendScreenEvent: " + screenName + ' ' + action);
             var eventName = "Screen_" + action switch
             {
                 ScreenAction.Open => "Open",
@@ -57,25 +60,28 @@ namespace Analytics
 
         public override void SendLevelEvent(LevelPointer levelPointer, LevelEvent levelEvent)
         {
+            Debug.Log("SendLevelEvent: " + levelPointer.LevelId + ' ' + levelEvent);
             if (levelEvent == LevelEvent.Load)
             {
                 SendLoadLevelEvent(levelPointer);
                 return;
             }
-            
+
             var gAProgressionStatus = levelEvent switch
             {
                 LevelEvent.Start => GAProgressionStatus.Start,
                 LevelEvent.Fail => GAProgressionStatus.Fail,
                 LevelEvent.Complete => GAProgressionStatus.Complete,
                 _ => GAProgressionStatus.Undefined
-            };;
+            };
+            ;
             GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Level_" + levelPointer.LevelId);
         }
 
         public override void SendSessionEvent(SessionEvent sessionEvent, LevelPointer currentLevelPointer)
         {
-            var param = new Dictionary<string, object> {{"level", currentLevelPointer.LevelId}};
+            Debug.Log("SendSessionEvent: " + sessionEvent);
+            var param = new Dictionary<string, object> { { "level", currentLevelPointer.LevelId } };
             var eventName = sessionEvent switch
             {
                 SessionEvent.Start => "Game Session Started",
@@ -87,23 +93,57 @@ namespace Analytics
 
         public override void SendErrorEvent(string error)
         {
+            Debug.Log("SendErrorEvent: " + error);
             GameAnalytics.NewErrorEvent(GAErrorSeverity.Error, error);
-        }
-
-        private void SendLoadLevelEvent(LevelPointer levelPointer)
-        {
-            var param = new Dictionary<string, object> {{"levelId", levelPointer.LevelId}};
-            GameAnalytics.NewDesignEvent("ManualLoadLevel", param);
         }
 
         public override void SetPlayerId(string id)
         {
+            Debug.Log("Set player id: " + id);
             GameAnalytics.SetCustomId(id);
+            GameAnalytics.Initialize();
+        }
+
+        public override void InitializeWithoutPlayerId()
+        {
+            Debug.Log("InitializeWithoutPlayerId");
+            GameAnalytics.Initialize();
         }
 
         public override void SendFirstOpenEvent()
         {
+            Debug.Log("SendFirstOpenEvent");
             GameAnalytics.NewDesignEvent("FirstOpen");
+        }
+
+        public override void SendPurchasedEvent(long purchaseId)
+        {
+            Debug.Log("SendPurchasedEvent");
+            GameAnalytics.NewResourceEvent(
+                GAResourceFlowType.Sink,
+                "coins",
+                1,
+                defaultPostfix,
+                purchaseId.ToString()
+            );
+        }
+        
+        public override void SendBalanceAddedEvent(int amount)
+        {
+            Debug.Log("SendBalanceAddedEvent");
+            GameAnalytics.NewResourceEvent(
+                GAResourceFlowType.Source,
+                "coins",
+                amount,
+                defaultPostfix,
+                "coins"
+            );
+        }
+
+        private void SendLoadLevelEvent(LevelPointer levelPointer)
+        {
+            var param = new Dictionary<string, object> { { "levelId", levelPointer.LevelId } };
+            GameAnalytics.NewDesignEvent("ManualLoadLevel", param);
         }
     }
 }

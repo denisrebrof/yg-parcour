@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11d22b23-94c9-40b9-8d18-1be45c1b03ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialNavigatorHitsDecorator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/InterstitialAdNavigator/YandexInterstitialNavigatorHitsDecorator.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ExternalAssets/Mini First Person Controller/Scripts/Components/Jump.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI Sprite Atlas.spriteatlas" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI Sprite Atlas.spriteatlas" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +40,23 @@
       <workItem from="1643045391008" duration="315000" />
       <workItem from="1643116488090" duration="1231000" />
       <workItem from="1643483440683" duration="1076000" />
-      <workItem from="1643628488982" duration="675000" />
+      <workItem from="1643628488982" duration="3235000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -63,19 +68,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2351" y="490" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1641156697394">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="2351" y="490" key="#com.intellij.fileTypes.FileTypeChooser/0.0.3440.1400@0.0.3440.1400" timestamp="1641156697394" />
-    <state x="2288" y="275" width="583" height="849" key="find.popup" timestamp="1641142087397">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="2288" y="275" width="583" height="849" key="find.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1641142087397" />
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1641156685809">
-      <screen x="0" y="0" width="3440" height="1400" />
-    </state>
-    <state x="2243" y="319" width="672" height="678" key="search.everywhere.popup/0.0.3440.1400@0.0.3440.1400" timestamp="1641156685809" />
   </component>
 </project>

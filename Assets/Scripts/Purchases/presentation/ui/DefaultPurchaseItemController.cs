@@ -1,4 +1,5 @@
 ﻿using System;
+using Analytics.adapter;
 using Purchases.domain;
 using Purchases.domain.model;
 using Purchases.domain.repositories;
@@ -10,6 +11,7 @@ namespace Purchases.presentation.ui
 {
     public class DefaultPurchaseItemController : MonoBehaviour, PurchaseItem.IPurchaseItemController
     {
+        [Inject] private AnalyticsAdapter analytics;
         [Inject] private PurchasedStateUseCase purchasedStateUseCase;
         [Inject] private CoinsPurchaseUseCase coinsPurchaseUseCase;
         [Inject] private PurchaseAvailableUseCase purchaseAvailableUseCase;
@@ -37,7 +39,9 @@ namespace Purchases.presentation.ui
             .Take(1)
             .Where(available => available)
             .SelectMany(coinsPurchaseUseCase.ExecutePurchase(purchaseId))
-            .Subscribe() //Ignore result
+            .Subscribe((res) => {
+                if (res == CoinsPurchaseUseCase.CoinsPurchaseResult.Success) analytics.SendPurchasedEvent(purchaseId);
+            }) //Ignore result
             .AddTo(this);
 
         private void HandleItemClick(bool purchasedState, long purchaseId)

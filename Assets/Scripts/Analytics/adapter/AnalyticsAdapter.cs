@@ -1,13 +1,10 @@
-﻿using System;
-using Analytics.ads;
-using Analytics.ads.placement;
+﻿using Analytics.ads;
 using Analytics.levels;
 using Analytics.screens;
-using Analytics.session;
 using Analytics.session.domain;
 using Analytics.settings;
 
-namespace Analytics
+namespace Analytics.adapter
 {
     public abstract class AnalyticsAdapter
     {
@@ -18,6 +15,9 @@ namespace Analytics
         public abstract void SendSessionEvent(SessionEvent sessionEvent, LevelPointer currentLevelPointer);
         public abstract void SendErrorEvent(string error);
         public abstract void SetPlayerId(string id);
+        public abstract void InitializeWithoutPlayerId();
         public abstract void SendFirstOpenEvent();
+        public abstract void SendPurchasedEvent(long purchaseId);
+        public abstract void SendBalanceAddedEvent(int amount);
     }
 }

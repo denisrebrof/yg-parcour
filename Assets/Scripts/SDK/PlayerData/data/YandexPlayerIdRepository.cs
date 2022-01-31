@@ -13,10 +13,8 @@ namespace SDK.PlayerData.data
         [Inject] private YandexSDK instance;
 
         public bool GetPlayerIdAvailable() => true;
-
-        public IObservable<string> GetPlayerId()
+        public IObservable<string> InitializeWithPlayerId()
         {
-            Debug.Log("Get Pid in YPIR");
             return Observable.FromEvent<string>(
                 handler => instance.onPlayerIdReceived += handler,
                 handler => instance.onPlayerIdReceived -= handler

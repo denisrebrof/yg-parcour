@@ -23,7 +23,7 @@ MonoBehaviour:
     EnName: DOUBLE JUMP
     EnDescription: Press the Spacebar while in flight to perform an extra jump!
     passRewardLevelId: 0
-    coinsCost: 1
+    coinsCost: 20
     rewardedVideoCount: 0
     Type: 0
     image: {fileID: 21300000, guid: 253a370633f1cd746a2b7d2a577a7e5c, type: 3}
@@ -36,7 +36,7 @@ MonoBehaviour:
     EnName: Speed +33%
     EnDescription: Really fast running - will help you run better and jump further
     passRewardLevelId: 0
-    coinsCost: 2
+    coinsCost: 50
     rewardedVideoCount: 0
     Type: 0
     image: {fileID: 21300000, guid: 3d36b4bc6627719429dd8369aa6fd21b, type: 3}

@@ -1,3 +1,4 @@
+using Analytics.adapter;
 using Analytics.session.domain;
 using UnityEngine;
 using Zenject;

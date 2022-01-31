@@ -25,6 +25,7 @@ mergeInto(LibraryManager.library, {
   },
 
   Hit: function(ename) {
+      console.log('Hit');
       addHit(ename);
   },
 

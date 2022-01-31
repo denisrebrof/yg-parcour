@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Analytics.adapter;
+using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 

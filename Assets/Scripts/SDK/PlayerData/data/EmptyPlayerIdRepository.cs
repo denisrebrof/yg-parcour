@@ -8,6 +8,6 @@ namespace SDK.PlayerData.data
     {
         public bool GetPlayerIdAvailable() => false;
 
-        public IObservable<string> GetPlayerId() => Observable.Never<string>();
+        public IObservable<string> InitializeWithPlayerId() => Observable.Never<string>();
     }
 }
