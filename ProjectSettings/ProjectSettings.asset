@@ -702,19 +702,19 @@ PlayerSettings:
   spritePackerPolicy: 
   webGLMemorySize: 256
   webGLExceptionSupport: 2
-  webGLNameFilesAsHashes: 1
+  webGLNameFilesAsHashes: 0
   webGLDataCaching: 1
   webGLDebugSymbols: 0
   webGLEmscriptenArgs: 
   webGLModulesDirectory: 
-  webGLTemplate: PROJECT:Universal2020
+  webGLTemplate: PROJECT:Crazy_2020
   webGLAnalyzeBuildSize: 0
   webGLUseEmbeddedResources: 0
   webGLCompressionFormat: 1
   webGLWasmArithmeticExceptions: 0
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
-  webGLDecompressionFallback: 1
+  webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     : UNITY_POST_PROCESSING_STACK_V2
     Android: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
@@ -728,7 +728,7 @@ PlayerSettings:
     PS5: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Stadia: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     Standalone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;AMPLIFY_SHADER_EDITOR
-    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;AMPLIFY_SHADER_EDITOR;YANDEX_SDK;GAME_ANALYTICS
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER;AMPLIFY_SHADER_EDITOR;GAME_ANALYTICS;CRAZY_SDK
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     XboxOne: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER
     iPhone: UNITY_POST_PROCESSING_STACK_V2;dUI_MANAGER

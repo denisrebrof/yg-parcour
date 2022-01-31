@@ -3,34 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="3b3a675f-0744-4049-a1b7-83abc54c02ce" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.yg-parcour/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/YandexHit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/YSDK/yandexProvider.jslib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Analytics/GameAnalytics.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Analytics/GameAnalytics.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SDK/YandexSDK.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SDK/YandexSDK.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Simple Purchase Entities Dao.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorAnalyticsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads/presentation/InterstitialAdNavigator/decorators/InterstitialAdNavigatorAnalyticsDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/SetAnalyticsPlayerId.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/_di/AnalyticsInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/AnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/DebugLogAnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/adapter/GameAnalyticsAdapter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/FirstLaunchEventHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/FirstLaunchEventHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/SessionEventsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/session/presentation/SessionEventsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Analytics/settings/SettingsToggleAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Analytics/settings/SettingsToggleAnalyticsEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelCompletedAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelCompletedAnalyticsEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelFailedAnalyticsEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/LevelFailedAnalyticsEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/analytics/ScreenStateAnalyticsHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItemControllerAnalyticsDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Levels/presentation/ui/LevelItemControllerAnalyticsDecorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MobileInputDebug.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/Purchases.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/Purchases.asmdef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Purchases/presentation/ui/DefaultPurchaseItemController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/EmptyPlayerIdRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/data/YandexPlayerIdRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SDK/PlayerData/domain/IPlayerIdRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Doozy/Editor/Nody/Settings/NodyWindowSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SDK/CrazySDK.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SDK/CrazySDK.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/GameAnalytics/Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertBodyJsY.html" beforeDir="false" afterPath="$PROJECT_DIR$/insertBodyJsY.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +147,7 @@
       <workItem from="1643392950168" duration="877000" />
       <workItem from="1643481139282" duration="3868000" />
       <workItem from="1643626904772" duration="9950000" />
-      <workItem from="1643652955180" duration="306000" />
+      <workItem from="1643652955180" duration="1601000" />
     </task>
     <servers />
   </component>
