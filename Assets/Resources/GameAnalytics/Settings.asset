@@ -30,7 +30,7 @@ MonoBehaviour:
   secretKey:
   - 0eaaea129547095f2bbe65792f2fc2f7da09926a
   Build:
-  - 1.1.c
+  - 1.1.y
   SelectedPlatformOrganization:
   - Upreality
   SelectedPlatformStudio:
@@ -42,75 +42,87 @@ MonoBehaviour:
   SelectedStudio: 01000000
   SelectedGame: 01000000
   NewVersion: 7.3.17
-  Changes: '7.3.17
+  Changes: '7.3.19
 
-    - added method manually update gamekey and secretkey
+    - updated dependencies
+
+
+    7.3.18
+
+    - fixed fps event
+    script to still run coroutines when Time.timeScale = 0 by using WaitForSecondsRealtime
+    instead of WaitForSeconds
+
+
+    7.3.17
+
+    - added method manually update gamekey
+    and secretkey
 
 
     7.3.16
 
-    -
-    fixed uwp build errors
+    - fixed uwp build errors
 
 
     7.3.15
 
-    - changed frequency logic for fps events
+    -
+    changed frequency logic for fps events
 
 
     7.3.14
 
-    -
-    small fix
+    - small fix
 
 
     7.3.13
 
-    - fixed crash for android builds
+    -
+    fixed crash for android builds
 
 
     7.3.12
 
-    -
-    removed imei identifiers and other alternative identifiers from user identifier
-    logic (android)
+    - removed imei identifiers and
+    other alternative identifiers from user identifier logic (android)
 
 
     7.3.11
 
-    - updated dependency to external dependency
-    resolver
+    -
+    updated dependency to external dependency resolver
 
 
     7.3.10
 
-    - adding missing .meta file for upm release
+    - adding
+    missing .meta file for upm release
 
-    -
-    switched to using openupm for scoped registry when using upm, please update the
-    upm setup for the unity sdk
+    - switched to using openupm for scoped
+    registry when using upm, please update the upm setup for the unity sdk
 
 
     7.3.9
 
-    - fixed upm package.json
+    -
+    fixed upm package.json
 
 
     7.3.8
 
-    -
-    fixed upm dependecy
+    - fixed upm dependecy
 
 
     7.3.7
 
-    - added depedencies.xml for upm release
+    -
+    added depedencies.xml for upm release
 
 
     7.3.6
 
-    -
-    fixed playmaker bugs'
+    - fixed playmaker bugs'
   SignUpOpen: 0
   StudioName: Upreality
   GameName: Jump To Sky - 3D Parcour

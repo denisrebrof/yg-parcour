@@ -1219,7 +1219,7 @@ PrefabInstance:
     - target: {fileID: 4573712323632796937, guid: 04c188d70605e7a4ba8ebc290357db88,
         type: 3}
       propertyPath: m_Text
-      value: M or ESC - open menu
+      value: Double ESC - open menu
       objectReference: {fileID: 0}
     - target: {fileID: 5434133326264784604, guid: 04c188d70605e7a4ba8ebc290357db88,
         type: 3}
@@ -1425,17 +1425,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7420356414315076879, guid: 04c188d70605e7a4ba8ebc290357db88,
-        type: 3}
-      propertyPath: en
-      value: M or ESC - open menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 7420356414315076879, guid: 04c188d70605e7a4ba8ebc290357db88,
-        type: 3}
-      propertyPath: ru
-      value: "M(\u044C) \u0438\u043B\u0438 ESC - \u043E\u0442\u043A\u0440\u044B\u0442\u044C
-        \u043C\u0435\u043D\u044E"
       objectReference: {fileID: 0}
     - target: {fileID: 8736347223398749378, guid: 04c188d70605e7a4ba8ebc290357db88,
         type: 3}
