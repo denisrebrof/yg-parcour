@@ -6,6 +6,7 @@ using Zenject;
 public class FirstPersonMovement : MonoBehaviour
 {
     [Inject] private IMovementInputProvider inputProvider;
+    [SerializeField] private GroundCheck check;
 
     public float speed = 5;
     public float speedMultiplier = 1;
@@ -28,7 +29,10 @@ public class FirstPersonMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Update IsRunning from input.
-        IsRunning = canRun && inputProvider.GetRunningInput();
+        if (check.isGrounded)
+        {
+            IsRunning = canRun && inputProvider.GetRunningInput();
+        }
 
         // Get targetMovingSpeed.
         float targetMovingSpeed = IsRunning ? runSpeed : speed;
@@ -46,6 +50,12 @@ public class FirstPersonMovement : MonoBehaviour
         // Apply movement.
         m_rigidbody.velocity =
             transform.rotation * new Vector3(targetVelocity.x, m_rigidbody.velocity.y, targetVelocity.y);
+    }
+
+    public void ResetVelocity()
+    {
+        m_rigidbody.velocity = Vector3.zero;
+        m_rigidbody.angularVelocity = Vector3.zero;
     }
 
     public void SetSpeedMul(float mul) => speedMultiplier = mul;
