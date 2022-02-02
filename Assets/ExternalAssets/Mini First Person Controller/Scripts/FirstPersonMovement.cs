@@ -17,7 +17,7 @@ public class FirstPersonMovement : MonoBehaviour
     Rigidbody m_rigidbody;
 
     /// <summary> Functions to override movement speed. Will use the last added override. </summary>
-    public List<Func<float>> speedOverrides = new List<Func<float>>();
+    public List<Func<float>> speedOverrides = new();
 
     void Awake()
     {
