@@ -87,6 +87,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 9112226273830830179}
+        m_TargetAssemblyTypeName: Levels.presentation.CurrentLevelFilter, LevelsAssembly
+        m_MethodName: PushEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   exitTriggerEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -424,11 +436,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6888193575424739833}
   - component: {fileID: 8514473162802125386}
-  - component: {fileID: 4584899406762335675}
-  - component: {fileID: 5405067166044294227}
+  - component: {fileID: 9112226273830830179}
   - component: {fileID: 8828995837655049217}
   m_Layer: 0
-  m_Name: HappyTimeTrigger
+  m_Name: HappyTime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -461,20 +472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0871f748c48352f4593c03df6c2009ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &4584899406762335675
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7614193120111293430}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 32.9, y: 12.69, z: 27.05}
-  m_Center: {x: 2.842171e-14, y: 6.0673237, z: 0.44901705}
---- !u!114 &5405067166044294227
+--- !u!114 &9112226273830830179
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,14 +481,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 7614193120111293430}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09016bee19e911f4fbd0f92b795c5ebb, type: 3}
+  m_Script: {fileID: 11500000, guid: bafac9594616df1488c71c065f717d37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerEvent:
+  passEveryLevels: 5
+  onFilterPass:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8828995837655049217}
-        m_TargetAssemblyTypeName: PokiHappyTime, Assembly-CSharp
+        m_TargetAssemblyTypeName: SDK.HappyTime.HappyTime, SDK
         m_MethodName: SetHappyTime
         m_Mode: 1
         m_Arguments:
@@ -501,12 +500,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  exitTriggerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  gameEvent: 
-  exitGameEvent: 
-  triggerTag: Player
 --- !u!114 &8828995837655049217
 MonoBehaviour:
   m_ObjectHideFlags: 0
