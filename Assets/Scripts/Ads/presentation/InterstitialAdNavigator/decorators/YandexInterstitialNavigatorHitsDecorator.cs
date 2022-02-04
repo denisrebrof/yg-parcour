@@ -5,7 +5,7 @@ using Zenject;
 using Plugins.YSDK;
 #endif
 
-namespace Ads.InterstitialAdNavigator
+namespace Ads.presentation.InterstitialAdNavigator.decorators
 {
     public class YandexInterstitialNavigatorHitsDecorator : IInterstitalAdNavigator
     {

@@ -1,6 +1,8 @@
+using Gameplay;
 using Gameplay.Input;
 using Gameplay.Inputs;
 using Gameplay.Inputs.Jump;
+using SDK.GameState;
 using UnityEngine;
 using Zenject;
 
@@ -16,7 +18,7 @@ public class ProjectInstaller : MonoInstaller
         BindMovementInputProvider();
         BindJumpInputProvider();
     }
-    
+
     private void BindJumpInputProvider()
     {
         Container
@@ -33,7 +35,7 @@ public class ProjectInstaller : MonoInstaller
 
         Container.Bind<Jump.IJumpInputProvider>().To<JumpInputProviderRouter>().AsSingle();
     }
-    
+
     private void BindMovementInputProvider()
     {
         Container

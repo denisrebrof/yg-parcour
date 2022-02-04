@@ -1,5 +1,7 @@
+using System.Linq;
 using CrazyGames;
 using Plugins.VKSDK;
+using SDK.GameState;
 using SDK.HappyTime;
 using SDK.HappyTime.controller;
 using SDK.Platform.domain;
@@ -17,6 +19,7 @@ public class SDKInstaller : ScriptableObjectInstaller
 
     public override void InstallBindings()
     {
+        InstallGameStateNavigator();
         InstallSDK();
         InstallHappyTime();
         InstallPlatformProvider();
@@ -34,6 +37,12 @@ public class SDKInstaller : ScriptableObjectInstaller
             .To<DebugLogHappyTimeController>()
 #endif
             .AsSingle();
+    }
+    
+    private void InstallGameStateNavigator()
+    {
+        var gameStateNavigator = FindObjectsOfType<MonoBehaviour>().OfType<IGameStateNavigator>().First(); 
+        Container.Bind<IGameStateNavigator>().FromInstance(gameStateNavigator).AsSingle();
     }
 
     private void InstallSDK()
