@@ -50,6 +50,27 @@ public class FirstPersonMovement : MonoBehaviour
         // Apply movement.
         m_rigidbody.velocity =
             transform.rotation * new Vector3(targetVelocity.x, m_rigidbody.velocity.y, targetVelocity.y);
+
+        AvoidStacking();
+    }
+
+    private void AvoidStacking()
+    {
+        // Get the velocity
+        var horizontalMove = m_rigidbody.velocity;
+        // Don't use the vertical velocity
+        horizontalMove.y = 0;
+        // Calculate the approximate distance that will be traversed
+        var distance =  horizontalMove.magnitude * Time.fixedDeltaTime;
+        // Normalize horizontalMove since it should be used to indicate direction
+        horizontalMove.Normalize();
+
+        // Check if the body's current velocity will result in a collision
+        if(m_rigidbody.SweepTest(horizontalMove, out _, distance))
+        {
+            // If so, stop the movement
+            m_rigidbody.velocity = new Vector3(0, m_rigidbody.velocity.y, 0);
+        }
     }
 
     public void ResetVelocity()
