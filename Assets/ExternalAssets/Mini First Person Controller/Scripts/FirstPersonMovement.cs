@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Zenject;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 public class FirstPersonMovement : MonoBehaviour
 {
@@ -66,11 +69,12 @@ public class FirstPersonMovement : MonoBehaviour
         horizontalMove.Normalize();
 
         // Check if the body's current velocity will result in a collision
-        if(m_rigidbody.SweepTest(horizontalMove, out _, distance))
-        {
-            // If so, stop the movement
-            m_rigidbody.velocity = new Vector3(0, m_rigidbody.velocity.y, 0);
-        }
+        if(check.isGrounded) return;
+        var hits = m_rigidbody.SweepTestAll(horizontalMove, distance).Where(hit => !hit.collider.isTrigger);
+        if (hits.ToList().Count == 0) return;
+        
+        // If so, fix the movement
+        m_rigidbody.velocity = new Vector3(0, m_rigidbody.velocity.y, 0);
     }
 
     public void ResetVelocity()
