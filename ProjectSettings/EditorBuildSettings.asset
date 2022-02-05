@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Plugins/CrazySDK/CrazyLogo/CrazyLogo.unity
     guid: 54237a42c0e098a4d96d788ed66fa9aa
   - enabled: 1
-    path: Assets/Plugins/CrazySDK/CrazyLogo/CrazyLogo.unity
-    guid: 54237a42c0e098a4d96d788ed66fa9aa
-  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 35d90811b70cda448a7c87c150a9adbf
   m_configObjects: {}
