@@ -75,7 +75,7 @@ namespace Analytics.adapter
                 _ => GAProgressionStatus.Undefined
             };
             ;
-            GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Level_" + levelPointer.LevelId);
+            GameAnalytics.NewProgressionEvent(gAProgressionStatus, "Level_" + levelPointer.LevelId);
         }
 
         public override void SendSessionEvent(SessionEvent sessionEvent, LevelPointer currentLevelPointer)

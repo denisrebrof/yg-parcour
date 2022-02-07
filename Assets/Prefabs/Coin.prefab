@@ -9716,6 +9716,7 @@ MonoBehaviour:
   gameEvent: 
   exitGameEvent: 
   triggerTag: Player
+  triggerOnce: 1
 --- !u!114 &5452512786820510970
 MonoBehaviour:
   m_ObjectHideFlags: 0

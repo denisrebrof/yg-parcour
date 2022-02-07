@@ -3,44 +3,53 @@ using Doozy.Engine;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PlayerTrigger : MonoBehaviour
+namespace Gameplay
 {
-    [SerializeField] private UnityEvent triggerEvent;
-    [SerializeField] private UnityEvent exitTriggerEvent;
-    [SerializeField] private string gameEvent;
-    [SerializeField] private string exitGameEvent;
-    [SerializeField] private string triggerTag = "Player";
-
-    private bool activeState;
-
-    private void OnTriggerEnter(Collider other)
+    public class PlayerTrigger : MonoBehaviour
     {
-        if(!other.CompareTag(triggerTag))
-            return;
+        [SerializeField] private UnityEvent triggerEvent;
+        [SerializeField] private UnityEvent exitTriggerEvent;
+        [SerializeField] private string gameEvent;
+        [SerializeField] private string exitGameEvent;
+        [SerializeField] private string triggerTag = "Player";
+
+        [SerializeField] private bool triggerOnce = false;
+        private bool triggeredEnter;
+        private bool triggeredExit;
+
+        private bool activeState;
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(!other.CompareTag(triggerTag) || (triggerOnce && triggeredEnter))
+                return;
         
-        if (triggerEvent != null) triggerEvent.Invoke();
-        if(!String.IsNullOrEmpty(gameEvent)) GameEventMessage.SendEvent(gameEvent);
-        activeState = true;
-    }
+            if (triggerEvent != null) triggerEvent.Invoke();
+            if(!String.IsNullOrEmpty(gameEvent)) GameEventMessage.SendEvent(gameEvent);
+            activeState = true;
+            triggeredEnter = true;
+        }
 
-    private void OnDestroy()
-    {
-        if(activeState)
+        private void OnDestroy()
+        {
+            if(activeState)
+                ExitTrigger();
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if(!other.CompareTag(triggerTag) || (triggerOnce && triggeredExit))
+                return;
+
             ExitTrigger();
-    }
+            activeState = false;
+            triggeredExit = true;
+        }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if(!other.CompareTag(triggerTag))
-            return;
-
-        ExitTrigger();
-        activeState = false;
-    }
-
-    private void ExitTrigger()
-    {
-        if (exitTriggerEvent != null) exitTriggerEvent.Invoke();
-        if (!String.IsNullOrEmpty(exitGameEvent)) GameEventMessage.SendEvent(exitGameEvent);
+        private void ExitTrigger()
+        {
+            if (exitTriggerEvent != null) exitTriggerEvent.Invoke();
+            if (!String.IsNullOrEmpty(exitGameEvent)) GameEventMessage.SendEvent(exitGameEvent);
+        }
     }
 }
