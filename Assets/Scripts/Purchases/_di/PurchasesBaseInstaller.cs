@@ -31,6 +31,7 @@ namespace Purchases._di
             Container.Bind<CoinsPurchaseUseCase>().ToSelf().AsSingle();
             Container.Bind<PurchasedStateUseCase>().ToSelf().AsSingle();
             Container.Bind<PurchaseAvailableUseCase>().ToSelf().AsSingle();
+            Container.Bind<CoinsPurchaseOfferUseCase>().ToSelf().AsSingle();
             Container.Bind<RewardedVideoPurchaseUseCase>().ToSelf().AsSingle();
             //Adapters
             Container

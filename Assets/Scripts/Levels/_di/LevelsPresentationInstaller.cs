@@ -16,7 +16,7 @@ namespace Levels._di
         public override void InstallBindings()
         {
             //Presentation
-            Container.Bind<ILevelCompletedListener>().FromInstance(completeLevelController).AsSingle();
+            Container.Bind<ILevelCompletionHandler>().FromInstance(completeLevelController).AsSingle();
             Container.Bind<LevelSceneLoader.ILevelLoadingTransition>().To<EmptySceneLoadingTransition>().AsSingle();
             Container.Bind<LevelSceneLoader>().FromInstance(loader).AsSingle();
             Container.Bind<LevelLoadingController>().FromInstance(levelLoadingController).AsSingle();

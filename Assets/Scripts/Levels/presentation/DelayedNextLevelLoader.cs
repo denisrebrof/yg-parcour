@@ -1,25 +1,27 @@
 using System.Collections;
 using Levels.domain.repositories;
-using Levels.presentation;
 using UnityEngine;
 using Zenject;
 
-public class DelayedNextLevelLoader : MonoBehaviour
+namespace Levels.presentation
 {
-    [SerializeField] private float delay = 1f;
-    [Inject] private ICurrentLevelRepository currentLevelRepository;
-    [Inject] private LevelLoadingController levelLoadingController;
-
-    public void LoadDelayed()
+    public class DelayedNextLevelLoader : MonoBehaviour
     {
-        StopAllCoroutines();
-        StartCoroutine(Load());
-    }
+        [SerializeField] private float delay = 1f;
+        [Inject] private ICurrentLevelRepository currentLevelRepository;
+        [Inject] private LevelLoadingController levelLoadingController;
 
-    private IEnumerator Load()
-    {
-        yield return new WaitForSeconds(delay);
-        var currentLevel = currentLevelRepository.GetCurrentLevel();
-        levelLoadingController.LoadLevel(currentLevel.ID);
+        public void LoadDelayed()
+        {
+            StopAllCoroutines();
+            StartCoroutine(Load());
+        }
+
+        private IEnumerator Load()
+        {
+            yield return new WaitForSeconds(delay);
+            var currentLevel = currentLevelRepository.GetCurrentLevel();
+            levelLoadingController.LoadLevel(currentLevel.ID);
+        }
     }
 }
