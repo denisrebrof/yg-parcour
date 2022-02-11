@@ -135,7 +135,6 @@ MonoBehaviour:
   VerboseLogBuild: 0
   UseManualSessionHandling: 0
   SendExampleGameDataToMyGame: 0
-  UseIMEI: 0
   InternetConnectivity: 0
   CustomDimensions01: []
   CustomDimensions02: []
