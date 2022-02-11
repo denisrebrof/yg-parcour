@@ -14,7 +14,9 @@ namespace SDK.PlayerData._di
                 .Bind<IPlayerIdRepository>()
 #if YANDEX_SDK && !UNITY_EDITOR
                 .To<YandexPlayerIdRepository>()
-#else
+#elif CRAZY_SDK
+                .To<AnonimousPlayerIdRepository>()
+                #else
                 .To<EmptyPlayerIdRepository>()
 #endif
                 .AsSingle();
