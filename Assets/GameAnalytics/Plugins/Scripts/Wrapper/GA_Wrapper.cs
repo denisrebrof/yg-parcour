@@ -282,7 +282,7 @@ namespace GameAnalyticsSDK.Wrapper
         private static bool isRemoteConfigsReady ()
         {
             if (GameAnalytics.SettingsGA.InfoLogEditor) {
-                // Debug.Log ("isRemoteConfigsReady()");
+                Debug.Log ("isRemoteConfigsReady()");
             }
             return false;
         }
